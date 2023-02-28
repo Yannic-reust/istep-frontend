@@ -2,16 +2,15 @@
 import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
-  setup() {
-    console.log("props.jobs");
-  },
+  name: "TitleBackground",
+  setup() {},
 });
 </script>
 
 <template>
   <div id="titleBackground">
     <div class="image" />
-    <div class="text">
+    <div class="textBox">
       <h1 class="text-d1 secondary">iStep</h1>
       <p class="text-h4 secondary">into my future</p>
     </div>

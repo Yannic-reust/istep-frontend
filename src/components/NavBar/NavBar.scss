@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+#navBar {
+  background-color: $primary;
+  height: 80px;
+  width: 100%;
+  .navContainer {
+    .line {
+      width: 60px;
+      height: 6px;
+      background-color: $secondary;
+      border-radius: 8px;
+    }
+  }
+  .navContent {
+    background-color: red;
+    width: 100vw;
+    height: 100vw;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
