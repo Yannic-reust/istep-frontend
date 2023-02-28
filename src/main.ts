@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
+
+import './App.scss'
 //@ts-ignore
 import App from './App.vue'
 //@ts-ignore

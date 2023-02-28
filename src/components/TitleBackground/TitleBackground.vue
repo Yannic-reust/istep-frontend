@@ -10,8 +10,11 @@ export default defineComponent({
 
 <template>
   <div id="titleBackground">
-    <h1>iStep</h1>
-    <p>into my future</p>
+    <div class="image" />
+    <div class="text">
+      <h1 class="text-d1 secondary">iStep</h1>
+      <p class="text-h4 secondary">into my future</p>
+    </div>
   </div>
 </template>
 

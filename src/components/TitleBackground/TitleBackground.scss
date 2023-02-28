@@ -1,0 +1,19 @@
+#titleBackground {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/titleBackground.jpg");
+    background-position: center;
+    filter: brightness(50%);
+    width: 100vw;
+    height: 100vh;
+  }
+  .text {
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+  }
+}
