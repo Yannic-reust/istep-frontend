@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "blackbox-mit-bdx": "^1.0.22",
-    "vue": "^3.2.45",
     "node-sass": "^7.0.1",
     "sass": "^1.54.0",
-    "vue-router": "4.1.2"
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
