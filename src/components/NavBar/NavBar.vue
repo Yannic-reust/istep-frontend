@@ -38,11 +38,17 @@ export default defineComponent({
       class="navContent flex cloumn justify-center align-center"
       v-if="showNav"
     >
+      <img
+        src="../../../assets/general/cross_white.png"
+        class="cross pointer"
+        alt="corss"
+        @click="showNav = !showNav"
+      />
       <div>
         <p
           v-for="(navItem, index) in navItems"
           :key="index"
-          class="text-center"
+          class="text-center text-h2 secondary"
         >
           {{ navItem }}
         </p>

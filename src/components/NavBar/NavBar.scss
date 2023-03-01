@@ -13,12 +13,18 @@
     }
   }
   .navContent {
-    background-color: red;
+    background-color: $primary;
     width: 100vw;
     height: 100vh;
     z-index: 9999;
     position: absolute;
     top: 0;
     left: 0;
+    .cross {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 60px;
+    }
   }
 }
