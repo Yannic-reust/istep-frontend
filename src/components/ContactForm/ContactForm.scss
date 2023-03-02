@@ -1,0 +1,13 @@
+#contactForm {
+  .textarea {
+    min-height: 100px;
+    font-family: "Roboto";
+    box-sizing: border-box;
+  }
+  .success {
+    color: rgba(34, 227, 111, 0.97);
+  }
+  .fail {
+    color: red;
+  }
+}
