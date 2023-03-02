@@ -39,7 +39,7 @@ export default defineComponent({
       v-if="showNav"
     >
       <img
-        src="../../../assets/general/cross_white.png"
+        src="../../assets/general/cross_white.png"
         class="cross pointer"
         alt="corss"
         @click="showNav = !showNav"
