@@ -29,13 +29,7 @@
                 Impressum
               </a>
             </li>
-            <li class="padding-top-1 padding-bottom-1">
-              <a
-                href="/AGBS-Blackbox_MIT_GmbH.pdf"
-                class="margin-top-1 secondary decoration-none"
-                >AGB's</a
-              >
-            </li>
+            <li class="padding-top-1 padding-bottom-1"></li>
           </ul>
         </div>
       </div>
@@ -46,7 +40,7 @@
 
 <style scoped src="./Footer.scss"></style>
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Footer",
