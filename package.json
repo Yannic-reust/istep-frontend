@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "blackbox-mit-bdx": "^1.0.22",
     "node-sass": "^7.0.1",
     "sass": "^1.54.0",
