@@ -7,7 +7,19 @@ export default defineComponent({
     const icons = [
       {
         iconName: "test",
-        iconPath: "",
+        iconPath: "../../../public/icons/ente.png",
+      },
+      {
+        iconName: "test",
+        iconPath: "../../../public/icons/ente.png",
+      },
+      {
+        iconName: "test",
+        iconPath: "../../../public/icons/ente.png",
+      },
+      {
+        iconName: "test",
+        iconPath: "../../../public/icons/ente.png",
       },
     ] as Array<IconType>;
     return { icons };
@@ -28,8 +40,14 @@ export default defineComponent({
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </p>
-          <div class="icons" v-for="(icon, index) in icons" :key="index">
-            <img :src="icon.iconPath" :alt="icon.iconName" class="icon" />
+          <div class="icons margin-top-2 flex">
+            <img
+              v-for="(icon, index) in icons"
+              :key="index"
+              :src="icon.iconPath"
+              :alt="icon.iconName"
+              class="icon margin-1"
+            />
           </div>
         </div>
         <div class="col-xs-12 col-md-6">
