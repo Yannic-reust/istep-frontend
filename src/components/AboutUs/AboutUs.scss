@@ -4,4 +4,15 @@
       max-width: 32px;
     }
   }
+  .img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #aboutUs {
+    .img {
+      width: 100%;
+      margin: 0;
+    }
+  }
 }

@@ -7,19 +7,19 @@ export default defineComponent({
     const icons = [
       {
         iconName: "test",
-        iconPath: "../../../public/icons/ente.png",
+        iconPath: "../../../icons/ente.png",
       },
       {
         iconName: "test",
-        iconPath: "../../../public/icons/ente.png",
+        iconPath: "../../../icons/ente.png",
       },
       {
         iconName: "test",
-        iconPath: "../../../public/icons/ente.png",
+        iconPath: "../../../icons/ente.png",
       },
       {
         iconName: "test",
-        iconPath: "../../../public/icons/ente.png",
+        iconPath: "../../../icons/ente.png",
       },
     ] as Array<IconType>;
     return { icons };
@@ -54,7 +54,7 @@ export default defineComponent({
           <img
             src="../../assets/components/titleBackground.jpg"
             alt="Team Bild"
-            class="width-80 margin-left-10 radius-16"
+            class="img margin-left-10 radius-16"
           />
         </div>
       </div>

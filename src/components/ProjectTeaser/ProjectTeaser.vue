@@ -19,7 +19,9 @@ export default defineComponent({
             class="width-80 margin-left-10 radius-16"
           />
         </div>
-        <div class="col-xs-12 col-md-6 flex column justify-center height-100">
+        <div
+          class="col-xs-12 col-md-6 flex column justify-center mobile-center"
+        >
           <h2>Projekte</h2>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
