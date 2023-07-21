@@ -63,6 +63,7 @@ export default defineComponent({
         .sendForm(
           "service_z1h8oro",
           "template_kdtd2f6",
+          //@ts-ignore
           this.$refs.form,
           "Mgqe5EGr-5KfNQMht"
         )
