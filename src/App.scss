@@ -1,5 +1,5 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap";
+@import "https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93+V2";
 
 $primary: #191919;
 $secondary: #efefef;
@@ -7,9 +7,46 @@ $accent-one: #56e689;
 $accent-tow: #558adb;
 $accent-three: #c655fa;
 $accent-four: #f06953;
+
+$accent-one-shade-100: #56e689;
+$accent-one-shade-90: #56e689;
+$accent-one-shade-80: #56e689;
+$accent-one-shade-70: #56e689;
+$accent-one-shade-60: #56e689;
+$accent-one-shade-50: #56e689;
+$accent-one-shade-40: #56e689;
+$accent-one-shade-30: #56e689;
+
+$accent-tow-shade-100: #558adb;
+$accent-tow-shade-90: #558adb;
+$accent-tow-shade-80: #558adb;
+$accent-tow-shade-70: #558adb;
+$accent-tow-shade-60: #558adb;
+$accent-tow-shade-50: #558adb;
+$accent-tow-shade-40: #558adb;
+$accent-tow-shade-30: #558adb;
+
+$accent-three-shade-100: #c655fa;
+$accent-three-shade-90: #c655fa;
+$accent-three-shade-80: #c655fa;
+$accent-three-shade-70: #c655fa;
+$accent-three-shade-60: #c655fa;
+$accent-three-shade-50: #c655fa;
+$accent-three-shade-40: #c655fa;
+$accent-three-shade-30: #c655fa;
+
+$accent-four-shade-100: #f06953;
+$accent-four-shade-90: #f06953;
+$accent-four-shade-80: #f06953;
+$accent-four-shade-70: #f06953;
+$accent-four-shade-60: #f06953;
+$accent-four-shade-50: #f06953;
+$accent-four-shade-40: #f06953;
+$accent-four-shade-30: #f06953;
+
 $primary-text: #efefef;
 $secondary-text: #191919;
-$primary-font: "Poppins", sans-serif;
+$primary-font: "Bauhaus 93 V2", sans-serif;
 $secondary-font: "Roboto", sans-serif;
 
 @import "./node_modules/blackbox-mit-bdx/index.scss";

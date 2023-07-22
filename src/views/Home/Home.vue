@@ -22,8 +22,12 @@ export default defineComponent({
       <titleBackground></titleBackground>
     </div>
 
-    <div class="margin-top-5 padding-bottom-5">
+    <div class="margin-top-5">
       <aboutUs />
+    </div>
+
+    <div class="margin-top-5 padding-bottom-5">
+     
     </div>
 
     <div class="margin-top-5 padding-bottom-5">
