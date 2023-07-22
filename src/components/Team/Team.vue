@@ -12,6 +12,7 @@
           <TeamMember
             :name="teamMember.attributes.Name"
             :text="teamMember.attributes.Text"
+            :image="teamMember.attributes.Image.data.attributes.url"
           />
         </div>
       </div>

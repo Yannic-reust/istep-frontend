@@ -5,8 +5,10 @@ $color-accent: #00BD9D;
   aspect-ratio: 9/16;
   perspective: 100rem;
   position: relative;
-  
+
+
   &__side {
+    border-radius: 20px;
     height: 100%;
     width: 100%;
     color: white;
@@ -19,14 +21,16 @@ $color-accent: #00BD9D;
     left: 0;
     transition: all 700ms ease;
     backface-visibility: hidden;
-    
+    img{
+      width: 100%;
+    }
     &--front {
-      background-color: $color-accent;
+      background-color: #00BD9D;
     }
     
     &--back {
-      background-color: #525B6B;
       
+      background-color: #525B6B;
       transform: rotateY(180deg);
       overflow: scroll;
       p{
