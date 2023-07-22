@@ -1,0 +1,40 @@
+$color-accent: #00BD9D;
+
+.card {
+  height: 15rem;
+  width: 10rem;
+  perspective: 100rem;
+  position: relative;
+  
+  &__side {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 700ms ease;
+    backface-visibility: hidden;
+    
+    &--front {
+      background-color: $color-accent;
+    }
+    
+    &--back {
+      background-color: #525B6B;
+      transform: rotateY(180deg);
+    }
+  }
+  
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+}

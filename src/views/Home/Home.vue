@@ -1,9 +1,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import teamComp from "../../components/Team/Team.vue";
 import titleBackground from "../../components/TitleBackground/TitleBackground.vue";
 import contactForm from "../../components/ContactForm/ContactForm.vue";
 import aboutUs from "../../components/AboutUs/AboutUs.vue";
 import projectTeaser from "../../components/ProjectTeaser/ProjectTeaser.vue";
+
 
 export default defineComponent({
   setup() {},
@@ -12,6 +14,7 @@ export default defineComponent({
     contactForm,
     aboutUs,
     projectTeaser,
+    teamComp,
   },
 });
 </script>
@@ -22,7 +25,11 @@ export default defineComponent({
       <titleBackground></titleBackground>
     </div>
 
-    <div class="margin-top-5">
+
+<div>
+  <teamComp/>
+</div>
+    <!-- <div class="margin-top-5">
       <aboutUs />
     </div>
 
@@ -34,7 +41,7 @@ export default defineComponent({
       <projectTeaser />
     </div>
 
-    <contactForm />
+    <contactForm /> -->
   </div>
 </template>
 
