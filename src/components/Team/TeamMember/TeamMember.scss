@@ -1,8 +1,8 @@
 $color-accent: #00BD9D;
 
 .card {
-  height: 15rem;
-  width: 10rem;
+  width: 100%;
+  aspect-ratio: 9/16;
   perspective: 100rem;
   position: relative;
   
@@ -26,7 +26,13 @@ $color-accent: #00BD9D;
     
     &--back {
       background-color: #525B6B;
+      
       transform: rotateY(180deg);
+      overflow: scroll;
+      p{
+        padding: 2rem;
+       
+      }
     }
   }
   

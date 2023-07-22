@@ -50,18 +50,3 @@ $primary-font: "Bauhaus 93 V2", sans-serif;
 $secondary-font: "Roboto", sans-serif;
 
 @import "./node_modules/blackbox-mit-bdx/index.scss";
-
-.content {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Space Mono', monospace;
-}
-.copyright {
-  position: absolute;
-  text-align: center;
-  bottom: 16px;
-  width: 100%;
-}
