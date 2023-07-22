@@ -9,8 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.17",
     "@emailjs/browser": "^3.10.0",
+    "@vue/apollo-composable": "^4.0.0-beta.8",
     "blackbox-mit-bdx": "^1.0.25",
+    "graphql": "^16.7.1",
+    "graphql-tag": "^2.12.6",
     "sass": "^1.56.2",
     "sass-loader": "^10.1.1",
     "vue": "^3.2.45",
