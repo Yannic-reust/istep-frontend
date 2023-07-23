@@ -30,6 +30,7 @@ $color-accent: #00bd9d;
     &--back {
       background-color: #525b6b;
       transform: rotateY(180deg);
+      overflow: hidden;
 
       p {
 

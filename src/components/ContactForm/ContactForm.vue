@@ -61,11 +61,11 @@ export default defineComponent({
     sendEmail() {
       emailjs
         .sendForm(
-          "service_z1h8oro",
-          "template_kdtd2f6",
+          "service_jq3nxlz",
+          "template_omcf3a3",
           //@ts-ignore
           this.$refs.form,
-          "Mgqe5EGr-5KfNQMht"
+          "9Fwh4_-6GU9R1g5_r"
         )
         .then(
           () => {

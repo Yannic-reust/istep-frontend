@@ -40,8 +40,8 @@ export default defineComponent({
     <div class="margin-top-5 padding-bottom-5">
       <projectTeaser />
     </div>
-
-    <contactForm /> -->
+-->
+    <contactForm /> 
   </div>
 </template>
 
