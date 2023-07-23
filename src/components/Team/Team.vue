@@ -1,6 +1,6 @@
 <template>
   <div id="team">
-    <h1>Team</h1>
+    <h1 class="margin-bottom-2 text-center">Team</h1>
     <div class="container" v-if="result">
       <div class="row">
         <div
@@ -8,11 +8,11 @@
           v-for="(teamMember, index) in result.teamMembers.data"
           :key="index"
         >
-        <p></p>
           <TeamMember
             :name="teamMember.attributes.Name"
             :text="teamMember.attributes.Text"
             :image="teamMember.attributes.Image.data.attributes.url"
+            class="margin-bottom-4"
           />
         </div>
       </div>
