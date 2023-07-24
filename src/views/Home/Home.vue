@@ -27,7 +27,7 @@ export default defineComponent({
 <template>
   <div id="home">
     <div class="padding-bottom-5">
-      <titleBackground></titleBackground>
+      <titleBackground />
     </div>
 
      <div class="margin-top-5">
