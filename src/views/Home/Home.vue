@@ -30,13 +30,13 @@ export default defineComponent({
       <titleBackground></titleBackground>
     </div>
 
-    <div>
+     <div class="margin-top-5">
       <teamComp />
     </div>
-    <div>
+     <div class="margin-top-5">
       <values />
     </div>
-    <div>
+     <div class="margin-top-5">
       <vision />
     </div>
     <div class="margin-top-5">
