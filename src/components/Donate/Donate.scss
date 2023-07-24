@@ -1,0 +1,14 @@
+#donate {
+
+    .img {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #donate {
+      .img {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }

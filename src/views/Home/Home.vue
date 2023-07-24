@@ -5,7 +5,9 @@ import titleBackground from "../../components/TitleBackground/TitleBackground.vu
 import contactForm from "../../components/ContactForm/ContactForm.vue";
 import aboutUs from "../../components/AboutUs/AboutUs.vue";
 import projectTeaser from "../../components/ProjectTeaser/ProjectTeaser.vue";
-
+import values from "../../components/Values/Values.vue";
+import vision from "../../components/Vision/Vision.vue";
+import donate from "../../components/Donate/Donate.vue";
 
 export default defineComponent({
   setup() {},
@@ -15,6 +17,9 @@ export default defineComponent({
     aboutUs,
     projectTeaser,
     teamComp,
+    values,
+    vision,
+    donate,
   },
 });
 </script>
@@ -25,23 +30,28 @@ export default defineComponent({
       <titleBackground></titleBackground>
     </div>
 
-
-<div>
-  <teamComp/>
-</div>
-    <!-- <div class="margin-top-5">
+    <div>
+      <teamComp />
+    </div>
+    <div>
+      <values />
+    </div>
+    <div>
+      <vision />
+    </div>
+    <div class="margin-top-5">
       <aboutUs />
     </div>
 
     <div class="margin-top-5 padding-bottom-5">
-     
+      <donate />
     </div>
 
     <div class="margin-top-5 padding-bottom-5">
       <projectTeaser />
     </div>
--->
-    <contactForm /> 
+
+    <contactForm />
   </div>
 </template>
 
