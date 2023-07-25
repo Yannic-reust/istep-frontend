@@ -1,0 +1,19 @@
+#selectLocale {
+  display: flex;
+  justify-content: center;
+  .wrapper {
+    width: 18%;
+    height: 32px;
+    .language-selector {
+      background-color: #191919;
+      border: none;
+
+      outline:0px;
+      width: 100%;
+      height: 100%;
+      font-size: 18px;
+      color: #f9f0ff;
+      opacity: 0.6;
+    }
+  }
+}

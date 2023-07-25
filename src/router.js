@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "./views/Home/Home.vue";
 import Impressum from "./views/Impressum/Impressum.vue";
+import BlogAlbanien from "./views/BlogAlbanien/BlogAlbanien.vue";
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/Impressum",
     name: "Impressum",
     component: Impressum,
+  },
+  {
+    path: "/BlogAlbanien",
+    name: "BlogAlbanien",
+    component: BlogAlbanien,
   },
 ];
 

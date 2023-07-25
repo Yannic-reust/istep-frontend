@@ -7,14 +7,14 @@
           <ul>
             <li class="padding-top-1 padding-bottom-1">
               <a href="/Impressum" class="secondary decoration-none">
-                Footer
+                Impressum
               </a>
             </li>
             <li class="padding-top-1 padding-bottom-1">
               <a
                 href="/AGBS-Blackbox_MIT_GmbH.pdf"
                 class="margin-top-1 secondary decoration-none"
-                >AGB's</a
+                >Statuten</a
               >
             </li>
           </ul>
@@ -29,9 +29,10 @@
                 Impressum
               </a>
             </li>
-            <li class="padding-top-1 padding-bottom-1"></li>
           </ul>
+          <selectLocale />
         </div>
+       
       </div>
       <p class="copyright secondary">iStep © 2023</p>
     </div>
@@ -41,10 +42,13 @@
 <style scoped src="./Footer.scss"></style>
 <script lang="ts">
 import { defineComponent } from "vue";
+import selectLocale from "../../components/SelectLocale/SelectLocale.vue";
 
 export default defineComponent({
   name: "Footer",
-
+  components: {
+    selectLocale,
+  },
   data() {
     return {};
   },
