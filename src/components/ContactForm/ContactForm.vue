@@ -27,17 +27,21 @@
               <p class="text-h4">Warum möchtest du mit uns in kontakt treten?</p>
             </div>
          
-          <div class="col-xs-12 col-md-4 flex">
+          <div class="col-xs-12 col-md-3 flex">
             <input type="radio" id="goenner" name="radio_input" value="30" />
             <label for="goenner"><p class="margin-left-2 text-h4">Gönner</p></label><br />
           </div>
-          <div class="col-xs-12 col-md-4 flex">
+          <div class="col-xs-12 col-md-3 flex">
             <input type="radio" id="helfer" name="radio_input" value="30" />
             <label for="helfer"><p class="margin-left-2 text-h4">Helfer</p></label><br />
           </div>
-          <div class="col-xs-12 col-md-4 flex">
+          <div class="col-xs-12 col-md-3 flex">
             <input type="radio" id="kurs_interessenten" name="radio_input" value="30" />
             <label for="kurs_interessenten"><p class="margin-left-2 text-h4">Kurs Interessierte</p></label><br />
+          </div>
+          <div class="col-xs-12 col-md-3 flex">
+            <input type="radio" id="kurs_interessenten" name="radio_input" value="30" />
+            <label for="kurs_interessenten"><p class="margin-left-2 text-h4">Anderer Grund</p></label><br />
           </div>
         </div>
           <div class="row">
