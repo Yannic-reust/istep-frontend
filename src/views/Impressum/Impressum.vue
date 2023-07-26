@@ -3,7 +3,7 @@
     <div class="container wrapper">
       <h3 class="primary">Kontakt-Adresse</h3>
       <div>
-        <p class="primary">iStep</p>
+        <p class="primary">iSTEP</p>
         <p class="primary">Adresse</p>
         <p class="primary">PLZ / Ort</p>
         <p class="primary">Schweiz</p>
@@ -13,14 +13,7 @@
         <p class="primary margin-top-4 bold">Vertretungsberechtigte Person</p>
         <p class="primary">Adrian Burkhalter</p>
 
-        <p class="primary margin-top-4 bold">Handelsregister-Eintrag</p>
-        <p class="primary margin-top-1 text-small">
-          Eingetragener Firmenname: iStep
-        </p>
-
-        <p class="primary margin-top-1 text-small">
-          Unternehmens-Nr (UID):CHE-xxx.xxx.xxx
-        </p>
+       
       </div>
       <div class="margin-bottom-5">
         <p class="primary bold margin-top-4">Haftungsausschluss</p>

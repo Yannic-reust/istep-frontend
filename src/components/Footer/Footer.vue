@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer-dark bg-primary">
+  <div class="footer-dark bg-primary">
     <div class="container">
       <h3 class="text-center margin-top-5 secondary text-h3">iStep</h3>
       <div class="row">
@@ -36,7 +36,7 @@
       </div>
       <p class="copyright secondary">iStep © 2023</p>
     </div>
-  </footer>
+  </div>
 </template>
 
 <style scoped src="./Footer.scss"></style>
