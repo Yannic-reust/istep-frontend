@@ -15,7 +15,7 @@ export default defineComponent({
   <div id="titleBackground">
     <div class="image" />
     <div class="textBox">
-      <h1 class="text-d1 secondary">iStep</h1>
+      <h1 class="text-d1 secondary thin">iStep</h1>
       <Icon icon="mdi:arrow-down" color="white" width="72" height="72" />
       <!-- <p class="text-h4 font-secondary secondary">into my future</p> -->
     </div>
