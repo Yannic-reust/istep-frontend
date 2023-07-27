@@ -10,8 +10,13 @@ import vision from "../../components/Vision/Vision.vue";
 import donate from "../../components/Donate/Donate.vue";
 
 
+import gql from "graphql-tag";
+
 export default defineComponent({
-  setup() {},
+  setup() {
+   
+  },
+
   components: {
     titleBackground,
     contactForm,
@@ -21,14 +26,13 @@ export default defineComponent({
     values,
     vision,
     donate,
-
   },
 });
+
 </script>
 
 <template>
   <div id="home">
- 
     <div class="padding-bottom-5">
       <titleBackground />
     </div>

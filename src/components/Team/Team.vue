@@ -37,28 +37,7 @@ export default defineComponent({
   },
   data() {
     return {
-      teamMembers: [
-        {
-          name: "Adrian",
-          text: "Text Adrian",
-        },
-        {
-          name: "Matt",
-          text: "Text Matt",
-        },
-        {
-          name: "Dominic",
-          text: "Text Dominic",
-        },
-        {
-          name: "Aline",
-          text: "Text Aline",
-        },
-        {
-          name: "Yannic",
-          text: "Text Yannic",
-        },
-      ],
+     
     };
   },
   components: {
