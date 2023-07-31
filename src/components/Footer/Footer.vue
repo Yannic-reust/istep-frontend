@@ -32,9 +32,8 @@
           </ul>
           <selectLocale />
         </div>
-       
       </div>
-      <p class="copyright secondary">iStep © 2023</p>
+      <p class="copyright secondary">iStep © {{ year }}</p>
     </div>
   </div>
 </template>
@@ -48,6 +47,10 @@ export default defineComponent({
   name: "Footer",
   components: {
     selectLocale,
+  },
+  setup() {
+    const year = new Date().getFullYear();
+    return { year };
   },
   data() {
     return {};

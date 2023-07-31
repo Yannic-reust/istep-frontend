@@ -1,6 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap";
 @import "https://db.onlinewebfonts.com/c/89d11a443c316da80dcb8f5e1f63c86e?family=Bauhaus+93+V2";
 
+html {
+    scroll-behavior: smooth;
+  }
+
 $primary: #191919;
 $secondary: #efefef;
 $accent-one: #56e689;

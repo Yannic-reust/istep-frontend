@@ -2,35 +2,26 @@
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "AboutUs",
-  setup() {
- 
-  },
+  props: ["aboutUs"],
+  setup() {},
 });
 </script>
 
 <template>
-  <div id="aboutUs">
+  <div id="aboutUs" class="bg-primary padding-5">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6 flex column justify-center height-100">
-          <h2>Über Uns</h2>
-          <p>
-            Hier ein Text Über uns
-            <br/>
-            <br/>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
+          <h2 class="margin-bottom-2 secondary">{{ aboutUs.Title }}</h2>
+          <p class="secondary">
+            {{ aboutUs.Text }}
           </p>
-        
         </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-6 margin-top-5">
           <img
-            src="../../assets/components/titleBackground.jpg"
+          :src="`https://istep-backend.blackbox-mit.ch${aboutUs.Image.data.attributes.url}`"
             alt="Team Bild"
-            class="img margin-left-10 radius-16"
+            class="img margin-left-10 radius-16 "
           />
         </div>
       </div>

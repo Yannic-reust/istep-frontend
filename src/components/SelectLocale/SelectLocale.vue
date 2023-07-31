@@ -1,21 +1,34 @@
 <template>
   <div id="selectLocale">
-    <div class="wrapper">
-      <select class="language-selector" v-model="$i18n.locale">
-        <option v-for="(lang, i) in langs" :key="`lang-${i}`" :value="lang" >
-          <p  v-if="lang === 'de'">Deutsch</p>
-          <p  v-else>Englisch</p>
+    <p>{{ store.state.currentLanguage }}</p>
+    <!-- <div class="wrapper">
+      <select class="language-selector">
+        <option v-for="(lang, i) in langs" :key="`lang-${i}`" :value="lang">
+          <p v-if="lang === 'de'">Deutsch</p>
+          <p v-else>Englisch</p>
+         
         </option>
       </select>
-    </div>
+    </div> -->
   </div>
 </template>
 
-<script  lang="ts">
+<script lang="ts">
+import { useStore } from "vuex";
 export default {
   name: "SelectLocale",
+
   data() {
-    return { langs: ["en", "de"] };
+    return { 
+      langs: ["en", "de"],
+    store: useStore(),};
+
+  },
+  methods: {
+    changelang(e: string) {
+      this.store.state.setLanguage(e);
+      window.location.reload();
+    },
   },
 };
 </script>
