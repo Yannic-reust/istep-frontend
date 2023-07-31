@@ -17,7 +17,10 @@ export default defineComponent({
     <div class="image" />
     <div class="textBox">
       <h1 class="text-d1 secondary thin">{{title}}</h1>
-      <Icon icon="mdi:arrow-down" color="white" width="72" height="72" />
+      <a href="#team">
+        <Icon icon="mdi:arrow-down" color="white" width="72" height="72" />
+      </a>
+    
       <!-- <p class="text-h4 font-secondary secondary">into my future</p> -->
     </div>
   </div>
