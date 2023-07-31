@@ -19,7 +19,7 @@ export default defineComponent({
         </div>
         <div class="col-xs-12 col-md-6 margin-top-5">
           <img
-            src="../../assets/components/titleBackground.jpg"
+          :src="`https://istep-backend.blackbox-mit.ch${aboutUs.Image.data.attributes.url}`"
             alt="Team Bild"
             class="img margin-left-10 radius-16 "
           />
