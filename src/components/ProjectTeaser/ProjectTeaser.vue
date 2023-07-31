@@ -27,7 +27,7 @@ export default defineComponent({
 
           <button
             class="button-primary width-10 margin-top-4"
-            @click="this.detailsOpen = !this.detailsOpen"
+            @click="detailsOpen = !detailsOpen"
           >
             {{ project.ButtonText }}
           </button>
@@ -45,10 +45,10 @@ export default defineComponent({
       </div>
     </div>
     <!------------------------------ Details ------------------------>
-    <div class="container margin-top-5" v-if="this.detailsOpen">
+    <div class="container margin-top-5" v-if="detailsOpen">
       <div class="row">
         <div
-          class="col-md-6 col-xs-12"
+          class="col-md-6 col-xs-12 margin-top-4"
           v-for="(ProjectDetailBox, index) in project.ProjectDetailBox"
           :key="index"
         >
