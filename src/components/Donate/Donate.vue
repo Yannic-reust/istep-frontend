@@ -3,6 +3,7 @@ import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 export default defineComponent({
   name: "Donate",
+  props: ["donate"],
   setup() {
     return {};
   },
@@ -14,11 +15,12 @@ export default defineComponent({
 
 <template>
   <div id="donate">
+
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-6">
-          <h2>Donate</h2>
-          <p>Short Donate Text</p>
+          <h2>{{ donate.Title }}</h2>
+          <p>{{ donate.Text }}</p>
           <Icon icon="ep:arrow-up-bold" :rotate="2" width="32px" />
         </div>
         <div class="col-xs-12 col-md-6">

@@ -1,7 +1,26 @@
-$color-accent: #00bd9d;
+#projectTeaser {
+  .Image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card{
+    width: 100%;
+    margin-left: 0%;
+ 
+  }
+}
+
+
+
 
 .card {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
   aspect-ratio: 3/4;
   perspective: 100rem;
   position: relative;

@@ -2,6 +2,7 @@
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "Vision",
+  props: ["vision"],
   setup() {
     return {};
   },
@@ -11,31 +12,21 @@ export default defineComponent({
 <template>
   <div id="vision">
     <div class="container">
-      <h2 class="text-center margin-bottom-4">Vision</h2>
+      <h2 class="text-center margin-bottom-0">{{ vision.Title }}</h2>
       <div class="row">
-        <div class="col-xs-12 col-md-6">
+        <div
+          class="col-xs-12 col-md-6 margin-top-4"
+          v-for="(visionItem, index) in vision.VisionItem"
+          :key="index"
+        >
           <div class="bg-secondary radius-16 padding-4">
             <div class="flex">
-              <h3>Befähigen</h3>
-            <img src="" al="" class="" />
+              <h3>{{ visionItem.Title }}</h3>
+              <img src="" al="" class="" />
             </div>
-        
+
             <p>
-              Wir begegnen anderen Menschen mit Freundlichkeit, Respekt und
-              Offenheit. Egal woher eine Person kommt, woran sie glaubt oder wo
-              sie im Leben steht, wir sind für alle Menschen offen,
-              wertschätzend und empathisch
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <div class="bg-secondary radius-16 padding-4">
-            <h3>Raum schaffen</h3>
-            <p>
-              Wir begegnen anderen Menschen mit Freundlichkeit, Respekt und
-              Offenheit. Egal woher eine Person kommt, woran sie glaubt oder wo
-              sie im Leben steht, wir sind für alle Menschen offen,
-              wertschätzend und empathisch
+              {{ visionItem.Text }}
             </p>
           </div>
         </div>

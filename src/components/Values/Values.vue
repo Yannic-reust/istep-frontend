@@ -2,6 +2,7 @@
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "Values",
+  props: ["values"],
   setup() {
     return {};
   },
@@ -9,40 +10,19 @@ export default defineComponent({
 </script>
 
 <template>
-  <div id="values">
+  <div id="values" class="padding-5 bg-secondary">
     <div class="container">
-      <h2 class="text-center margin-bottom-4">Values</h2>
+      <h2 class="text-center margin-bottom-2">{{ values.Title }}</h2>
       <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <div class="bg-secondary radius-16 padding-4">
-            <h3>Wertschätzen</h3>
+        <div
+          class="col-xs-12 col-md-4 margin-top-4"
+          v-for="(valueItem, index) in values.ValueItem"
+          :key="index"
+        >
+          <div class="bg radius-16 padding-4">
+            <h3>{{ valueItem.Title }}</h3>
             <p>
-              Wir begegnen anderen Menschen mit Freundlichkeit, Respekt und
-              Offenheit. Egal woher eine Person kommt, woran sie glaubt oder wo
-              sie im Leben steht, wir sind für alle Menschen offen,
-              wertschätzend und empathisch
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="bg-secondary radius-16 padding-4">
-            <h3>Wertschätzen</h3>
-            <p>
-              Wir begegnen anderen Menschen mit Freundlichkeit, Respekt und
-              Offenheit. Egal woher eine Person kommt, woran sie glaubt oder wo
-              sie im Leben steht, wir sind für alle Menschen offen,
-              wertschätzend und empathisch
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="bg-secondary radius-16 padding-4">
-            <h3>Wertschätzen</h3>
-            <p>
-              Wir begegnen anderen Menschen mit Freundlichkeit, Respekt und
-              Offenheit. Egal woher eine Person kommt, woran sie glaubt oder wo
-              sie im Leben steht, wir sind für alle Menschen offen,
-              wertschätzend und empathisch
+              {{ valueItem.Text }}
             </p>
           </div>
         </div>
