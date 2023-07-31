@@ -57,7 +57,7 @@ export default defineComponent({
           @click="showNav = !showNav "
           
         >
-        <a :href="'#'+navItem.link" class="text-h1 secondary decoration-none">
+        <a :href="'/#'+navItem.link" class="text-h1 secondary decoration-none">
           {{ navItem.name }}
         </a>
         

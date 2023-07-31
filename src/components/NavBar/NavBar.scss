@@ -6,8 +6,8 @@
   width: 100%;
   .navContainer {
     .line {
-      width: 60px;
-      height: 6px;
+      width: 42px;
+      height: 4px;
       background-color: $secondary;
       border-radius: 8px;
     }
@@ -22,9 +22,9 @@
     left: 0;
     .cross {
       position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 60px;
+      top: 26px;
+      right: 36px;
+      width: 26px;
     }
   }
 }
