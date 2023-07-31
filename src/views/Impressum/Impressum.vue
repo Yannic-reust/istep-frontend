@@ -4,8 +4,8 @@
       <h3 class="primary">Kontakt-Adresse</h3>
       <div>
         <p class="primary">iSTEP</p>
-        <p class="primary">Adresse</p>
-        <p class="primary">PLZ / Ort</p>
+        <p class="primary">Weingartenstrasse 6</p>
+        <p class="primary">3417 Rüegsau</p>
         <p class="primary">Schweiz</p>
 
         <a href="mailto:info@istep.ch" class="primary">info@istep.ch</a>
