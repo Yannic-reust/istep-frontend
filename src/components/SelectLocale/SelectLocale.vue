@@ -1,15 +1,21 @@
 <template>
   <div id="selectLocale">
-    <p>{{ store.state.currentLanguage }}</p>
-    <!-- <div class="wrapper">
-      <select class="language-selector">
-        <option v-for="(lang, i) in langs" :key="`lang-${i}`" :value="lang">
-          <p v-if="lang === 'de'">Deutsch</p>
-          <p v-else>Englisch</p>
-         
-        </option>
-      </select>
-    </div> -->
+    <h1>{{ open }}</h1>
+    <div class="dropdown">
+      <div class="flex align-center space-between" @click="open = !open">
+        <span class="selected padding-2">
+          {{ store.state.currentLanguage }}</span
+        >
+        <div class="caret margin-right-2"></div>
+      </div>
+
+      <div class="menu" v-if="open">
+
+        <p v-for="(lang, index) in store.state.locale" :key="index" class="padding-2" @click="changelang(lang.)">
+          {{ lang.lang }}
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -19,13 +25,14 @@ export default {
   name: "SelectLocale",
 
   data() {
-    return { 
-      langs: ["en", "de"],
-    store: useStore(),};
-
+    return {
+      open: false,
+      store: useStore(),
+    };
   },
   methods: {
     changelang(e: string) {
+      console.log(e)
       this.store.state.setLanguage(e);
       window.location.reload();
     },
