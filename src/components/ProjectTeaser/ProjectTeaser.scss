@@ -1,5 +1,39 @@
 #projectTeaser {
-  .Image{
+  .cards {
+    display: flex;
+    margin: 1rem;
+    .card {
+      background-color: #eee;
+     
+      border-radius: 5px;
+      display: flex;
+      flex: 1 0 200px;
+      flex-direction: column;
+      margin: 16px;
+
+      &-content {
+        flex: 1;
+        padding: 16px;
+      }
+
+      &-footer {
+        display: flex;
+        padding: 16px;
+      }
+
+      &-image {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 100%;
+      }
+
+      &-link {
+        margin: auto;
+      }
+    }
+  }
+
+  .Image {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;

@@ -1,7 +1,7 @@
 <template>
   <div class="footer-dark bg-primary">
     <div class="container">
-      <h3 class="text-center margin-top-5 secondary text-h3">iStep</h3>
+      <h3 class="text-center margin-top-5 secondary text-h3">iSTEP</h3>
       <div class="row">
         <div class="col-sm-12 col-md-6 item text text-center">
           <ul>
@@ -19,21 +19,21 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-12 col-md-6 item text text-center">
+        <div class="col-sm-12 col-md-6 item text flex-center column">
           <ul>
             <li class="padding-top-1 padding-bottom-1">
               <a
-                href="/Impressum"
+                href="mailsto:info@istep.ch"
                 class="secondary decoration-none margin-top-2"
               >
-                Impressum
+              info@istep.ch
               </a>
             </li>
           </ul>
           <selectLocale />
         </div>
       </div>
-      <p class="copyright secondary">iStep © {{ year }}</p>
+      <p class="copyright secondary">iSTEP © {{ year }}</p>
     </div>
   </div>
 </template>

@@ -8,15 +8,18 @@ const store = createStore({
       { code: "de", lang: "Deutsch" },
       { code: "en", lang: "Englisch" },
     ],
-    currentLanguage:"Deutsch"
+    currentLanguage: { code: "de", lang: "Deutsch" },
   },
   mutations: {
-    langChange(lang) {
-      this.currentLanguage = lang;
+    langChange(state, payload) {
+      state.currentLanguage = payload
+     
+      
     },
   },
   actions: {
-    setLanguage(lang) {
+    setLanguage(context, {lang}) {
+     
       context.commit("langChange", lang);
     },
   },
