@@ -27,7 +27,7 @@ export default defineComponent({
   <div id="navBar">
     <div class="navContainer flex space-between height-100">
       <div class="width-10 margin-left-5 flex align-center">
-        <h2 class="secondary">iSTEP</h2>
+        <h2 class="secondary thin">iSTEP</h2>
       </div>
       <div class="width-90 flex justify-end height-100">
         <div

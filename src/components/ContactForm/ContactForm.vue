@@ -39,7 +39,7 @@
                 type="radio"
                 id="goenner"
                 name="radio_input"
-                value="Gönner"
+                :value="item.Name"
               />
               <label for="goenner"
                 ><p class="margin-left-2 text-h4">{{ item.Name }}</p></label
