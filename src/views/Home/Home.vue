@@ -10,9 +10,13 @@ import vision from "../../components/Vision/Vision.vue";
 import donate from "../../components/Donate/Donate.vue";
 import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
-
+import { useStore } from "vuex";
 export default defineComponent({
   setup() {
+    const store = useStore();
+
+    const variables = { locale: store.state.currentLanguage.code };
+
     const home = gql`
       query home($locale: I18NLocaleCode) {
         teamMembers(locale: $locale) {
@@ -93,12 +97,21 @@ export default defineComponent({
                   }
                 }
               }
+              ContactForm {
+                Title
+                FirstInput
+                SecondInput
+                ThirdInput
+                Message
+                contactFormWhyItem {
+                  Name
+                }
+              }
             }
           }
         }
       }
     `;
-    const variables = { locale: "de" };
     const { result, loading, error } = useQuery(home, variables);
 
     return { result };
@@ -144,7 +157,7 @@ export default defineComponent({
       <projectTeaser :project="result.home.data.attributes.Project" />
     </div>
 
-    <contactForm />
+    <contactForm :contactForm="result.home.data.attributes.ContactForm" />
   </div>
 </template>
 

@@ -1,18 +1,21 @@
 <template>
   <div id="contactForm" class="margin-top-5 margin-bottom-5">
-    <h2 class="primary text-center">Kontaktiere uns!</h2>
+    <h2 class="primary text-center">{{ contactForm.Title }}</h2>
 
-    <div >
+    <div>
       <form ref="form" id="myForm" @submit.prevent="sendEmail">
         <div class="container">
-        
           <div class="row margin-top-2">
             <div class="col-sm-12 col-md-6 margin-top-2">
-              <label class="primary text-h4">Dein Name</label>
+              <label class="primary text-h4">{{
+                contactForm.FirstInput
+              }}</label>
               <input type="text" name="user_name" class="input-text" required />
             </div>
             <div class="col-sm-12 col-md-6 margin-top-2">
-              <label class="primary text-h4">Deine Email Adresse</label>
+              <label class="primary text-h4">{{
+                contactForm.SecondInput
+              }}</label>
               <input
                 type="email"
                 name="user_email"
@@ -24,29 +27,28 @@
 
           <div class="row">
             <div class="col-xs-12 margin-top-2 marginbottom-2">
-              <p class="text-h4">Warum möchtest du mit uns in kontakt treten?</p>
+              <p class="text-h4">{{ contactForm.ThirdInput }}</p>
             </div>
-         
-          <div class="col-xs-12 col-md-3 flex">
-            <input type="radio" id="goenner" name="radio_input" value="30" />
-            <label for="goenner"><p class="margin-left-2 text-h4">Gönner</p></label><br />
+
+            <div
+              class="col-xs-12 col-md-3 flex"
+              v-for="(item, index) in contactForm.contactFormWhyItem"
+              :key="index"
+            >
+              <input
+                type="radio"
+                id="goenner"
+                name="radio_input"
+                value="Gönner"
+              />
+              <label for="goenner"
+                ><p class="margin-left-2 text-h4">{{ item.Name }}</p></label
+              ><br />
+            </div>
           </div>
-          <div class="col-xs-12 col-md-3 flex">
-            <input type="radio" id="helfer" name="radio_input" value="30" />
-            <label for="helfer"><p class="margin-left-2 text-h4">Helfer</p></label><br />
-          </div>
-          <div class="col-xs-12 col-md-3 flex">
-            <input type="radio" id="kurs_interessenten" name="radio_input" value="30" />
-            <label for="kurs_interessenten"><p class="margin-left-2 text-h4">Kurs Interessierte</p></label><br />
-          </div>
-          <div class="col-xs-12 col-md-3 flex">
-            <input type="radio" id="kurs_interessenten" name="radio_input" value="30" />
-            <label for="kurs_interessenten"><p class="margin-left-2 text-h4">Anderer Grund</p></label><br />
-          </div>
-        </div>
           <div class="row">
             <div class="col-sm-12 padding-top-2">
-              <label class="primary text-h4">Deine Nachricht</label>
+              <label class="primary text-h4">{{ contactForm.Message }}</label>
               <textarea
                 name="message"
                 class="input-text textarea padding-2"
@@ -83,12 +85,16 @@ import { defineComponent } from "vue";
 import emailjs from "@emailjs/browser";
 export default defineComponent({
   name: "ContactFrom",
+  props: ["contactForm"],
   data() {
     return {
       success: false,
       fail: false,
       openForm: false,
     };
+  },
+  mounte() {
+    console.log(this.contactForm);
   },
   methods: {
     sendEmail() {
@@ -114,5 +120,3 @@ export default defineComponent({
 });
 </script>
 <style scoped src="./ContactForm.scss"></style>
-
-  

@@ -10,6 +10,7 @@ export default defineComponent({
 
 <template>
   <div id="teamMemeber">
+ 
     <div class="card">
       <div
         class="card__side card__side--front"
@@ -22,6 +23,7 @@ export default defineComponent({
         <p class="text-small thin">{{ text }}</p>
       </div>
     </div>
+    <p class="text-center text-h4 margin-top-1">{{ name }}</p>
   </div>
 </template>
 
