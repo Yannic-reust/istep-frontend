@@ -8,23 +8,7 @@ export default defineComponent({
   components: {
     Icon,
   },
-  created() {
-    var scripts = ["https://tamaro.raisenow.com/istep-b7da/latest/widget.js"];
-    scripts.forEach((script) => {
-      let tag = document.createElement("script");
-      tag.setAttribute("src", script);
-      document.head.appendChild(tag);
-    });
-  },
-  mounted() {
-    var scripts = ["./tamaro.js"];
-    scripts.forEach((script) => {
-      let tag = document.createElement("script");
-      tag.setAttribute("src", script);
-      document.head.appendChild(tag);
-    });
-  },
-});
+ });
 </script>
 
 <template>

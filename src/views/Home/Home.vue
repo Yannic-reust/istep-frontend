@@ -18,6 +18,15 @@ export default defineComponent({
 
     const home = gql`
       query home($locale: I18NLocaleCode) {
+        navigation(locale: $locale) {
+          data {
+            attributes {
+             Item{
+              Name
+             }
+            }
+          }
+        }
         teamMembers(locale: $locale) {
           data {
             attributes {
@@ -125,7 +134,7 @@ export default defineComponent({
 
 <template>
   <div id="home" v-if="result">
-    <div class="">
+    <div>
       <titleBackground
         :title="result.home.data.attributes.TitleSite"
         :text="result.home.data.attributes.TitleText"

@@ -3,14 +3,14 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "Navbar",
+  props:["navbar"],
   setup() {
     const navItems = [
-      { name: "Team", link: "team" },
-      { name: "Unsere Werte", link: "values" },
+      { name: "Projekte", link: "projectTeaser" },
       { name: "Vision", link: "vision" },
-      { name: "Über Uns", link: "aboutUs" },
+      { name: "Unsere Werte", link: "values" },
+      { name: "Über uns", link: "team" },
       { name: "Spenden", link: "donate" },
-      { name: "Projekt", link: "projectTeaser" },
       { name: "Kontaktiere Uns", link: "contactForm" },
     ];
 
@@ -25,6 +25,7 @@ export default defineComponent({
 
 <template>
   <div id="navBar">
+
     <div class="navContainer flex space-between height-100">
       <div class="width-10 margin-left-5 flex align-center">
         <h2 class="secondary thin">iSTEP</h2>
@@ -54,13 +55,14 @@ export default defineComponent({
           v-for="(navItem, index) in navItems"
           :key="index"
           class="text-center text-h2 secondary"
-          @click="showNav = !showNav "
-          
+          @click="showNav = !showNav"
         >
-        <a :href="'/#'+navItem.link" class="text-h1 secondary decoration-none">
-          {{ navItem.name }}
-        </a>
-        
+          <a
+            :href="'/#' + navItem.link"
+            class="text-h1 secondary decoration-none"
+          >
+            {{ navbar[index].Name }}
+          </a>
         </p>
       </div>
     </div>

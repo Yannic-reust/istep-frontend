@@ -5,18 +5,12 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 item text text-center">
           <ul>
-            <li class="padding-top-1 padding-bottom-1">
-              <a href="/Impressum" class="secondary decoration-none">
-                Impressum
+            <li class="padding-top-1 padding-bottom-1" v-for="(item, index) in footer" :key="index"> 
+              <a :href="'/'+ item.Link" class="secondary decoration-none">
+               {{item.Name}}
               </a>
             </li>
-            <li class="padding-top-1 padding-bottom-1">
-              <a
-                href="/AGBS-Blackbox_MIT_GmbH.pdf"
-                class="margin-top-1 secondary decoration-none"
-                >Statuten</a
-              >
-            </li>
+           
           </ul>
         </div>
         <div class="col-sm-12 col-md-6 item text flex-center column">
@@ -45,6 +39,7 @@ import selectLocale from "../../components/SelectLocale/SelectLocale.vue";
 
 export default defineComponent({
   name: "Footer",
+  props:["footer"],
   components: {
     selectLocale,
   },
