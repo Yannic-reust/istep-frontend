@@ -1,14 +1,16 @@
 <template>
-  <div id="team">
+  <div id="team" class="bg-secondary padding-top-5">
     <div class="container">
       <h2 class="margin-bottom-2 text-center">{{ aboutUs.Title }}</h2>
-      <p class="margin-bottom-5 text-center">{{ aboutUs.Text }}</p>
-      <div class="row">
+      <p class="margin-bottom-5 ">{{ aboutUs.Text }}</p>
+      <div class="width-80 margin-left-10 flex-center">
+        <div class="row">
         <div
-          class="col-lg-3 col-md-6 col-xs-12"
+          class="col-md-4 col-xs-12"
           v-for="(teamMember, index) in team"
           :key="index"
         >
+       
           <TeamMember
             :name="teamMember.attributes.Name"
             :text="teamMember.attributes.Text"
@@ -17,6 +19,8 @@
           />
         </div>
       </div>
+      </div>
+     
     </div>
   </div>
 </template>

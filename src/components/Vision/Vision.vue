@@ -20,10 +20,10 @@ export default defineComponent({
           :key="index"
         >
           <div class="bg-secondary height-100 radius-16 padding-4">
-            <div class="flex">
-              <h3>{{ visionItem.Title }}</h3>
-              <img src="" al="" class="" />
-            </div>
+    
+              <h4 class="text-center margin-bottom-2">{{ visionItem.Title }}</h4>
+          
+     
 
             <p>
               {{ visionItem.Text }}

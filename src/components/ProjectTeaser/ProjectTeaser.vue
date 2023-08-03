@@ -6,7 +6,7 @@ export default defineComponent({
   props: ["project"],
   data() {
     return {
-      detailsOpen: false,
+     // detailsOpen: false,
     };
   },
 });
@@ -17,49 +17,51 @@ export default defineComponent({
     <div class="container margin-bottom-5">
       <div class="row">
         <div
-          class="col-xs-12 col-md-6 flex column justify-center mobile-center"
+          class="col-xs-12"
         >
-          <h2>{{ project.Title }}</h2>
-          <p class="margin-top-2">
+          <h2 class="text-center">{{ project.Title }}</h2>
+          <p class="margin-top-2 ">
             {{ project.Text }}
           </p>
 
-          <button
+          <!-- <button
             class="button-primary width-10 margin-top-4"
-            @click="detailsOpen = !detailsOpen"
+         
           >
            <p>{{ project.ButtonText }}</p> 
-          </button>
+          </button> -->
         </div>
 
         <div class="col-xs-12 col-md-6 margin-top-5">
-          <img
+          <!-- <img
             :src="`https://istep-backend.blackbox-mit.ch${project.Image.data.attributes.url}`"
             alt="Team Bild"
             class="width-80 margin-left-10 radius-16"
-          />
+          /> -->
         </div>
       </div>
     </div>
     <!------------------------------ Details ------------------------>
 
-    <div class="container margin-top-5" v-if="detailsOpen">
-      <div class="row equal">
+    <div class="container margin-top-5" >
+      <div class="row">
         <div
           v-for="(ProjectDetailBox, index) in project.ProjectDetailBox"
           :key="index"
           class="col-xs-12 col-md-6 margin-top-5 flex column space-between"
         >
-          <div>
-            <h3 class="margin-bottom-2">{{ ProjectDetailBox.Title }}</h3>
-            <p>{{ ProjectDetailBox.Text }}</p>
-          </div>
-
-          <img
+        <h3 class="margin-bottom-2 text-center">{{ ProjectDetailBox.Title }}</h3>
+        <img
             :src="`https://istep-backend.blackbox-mit.ch${ProjectDetailBox.Image.data.attributes.url}`"
             :alt="ProjectDetailBox.Title"
-            class="Image radius-16 margin-top-5"
+            class="Image radius-16 margin-bottom-5"
           />
+         
+           
+            <p>{{ ProjectDetailBox.Text }}</p>
+     
+
+        
         </div>
       </div>
     </div>

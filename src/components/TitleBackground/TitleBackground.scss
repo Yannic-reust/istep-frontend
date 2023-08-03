@@ -1,6 +1,6 @@
 #titleBackground {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(70vh - 80px);
   position: relative;
   .image {
     background-size: cover;
@@ -12,10 +12,10 @@
     height: 100%;
   }
   .textBox {
-    width: 80%;
-    margin-left:10%;
+    width: 70%;
+    margin-left:15%;
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     text-align: center;
   }
 }

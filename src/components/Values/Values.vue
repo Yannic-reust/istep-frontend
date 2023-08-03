@@ -10,7 +10,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div id="values" class="padding-5 bg-secondary">
+  <div id="values" class="padding-5 ">
     <div class="container">
       <h2 class="text-center margin-bottom-2">{{ values.Title }}</h2>
       <div class="row equal">
@@ -19,8 +19,8 @@ export default defineComponent({
           v-for="(valueItem, index) in values.ValueItem"
           :key="index"
         >
-          <div class="bg radius-16 padding-4 height-100">
-            <h3>{{ valueItem.Title }}</h3>
+          <div class="bg-secondary radius-16 padding-4 height-100">
+            <h4 class="text-center margin-bottom-2">{{ valueItem.Title }}</h4>
             <p>
               {{ valueItem.Text }}
             </p>

@@ -4,6 +4,8 @@
     font-family: "Roboto";
     box-sizing: border-box;
     cursor: text;
+    border: none;
+    font-size: 16px;
   }
   .success {
     color: rgba(34, 227, 111, 0.97);
@@ -11,14 +13,20 @@
   .fail {
     color: red;
   }
-  input[type=email]{
+  input[type="email"] {
+    border: none;
     cursor: text;
+    font-size: 16px;
+    padding-left: 16px;
   }
-  input[type=text]{
-cursor: text;
+  input[type="text"] {
+    cursor: text;
+    font-size: 16px;
+    padding-left: 16px;
+    border: none;
   }
 
-  .t{
+  .t {
     font-family: "Roboto" !important;
   }
 }

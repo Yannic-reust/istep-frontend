@@ -1,70 +1,69 @@
 <template>
-  <div id="contactForm" class="margin-top-5 margin-bottom-5">
-    <h2 class="primary text-center">{{ contactForm.Title }}</h2>
+  <div id="contactForm" class="padding-top-10 padding-bottom-10 bg-secondary">
+    <h2 class="primary text-center margin-bottom-5">{{ contactForm.Title }}</h2>
 
     <div>
       <form ref="form" id="myForm" @submit.prevent="sendEmail">
         <div class="container">
           <div class="row margin-top-2">
-            <div class="col-sm-12 col-md-6 margin-top-2">
-              <label class="bold text-h4">{{ contactForm.FirstInput }}</label>
-              <input type="text" name="user_name" class="input-text" required />
-            </div>
-
-            <div class="col-sm-12 col-md-6 margin-top-2">
-              <label class="bold text-h4">{{ contactForm.SecondInput }}</label>
+            <div class="col-xs-12 col-md-6">
+              <input
+                type="text"
+                name="user_name"
+                class="input-text "
+                :placeholder="contactForm.FirstInput"
+                required
+              />
               <input
                 type="text"
                 name="user_name2"
-                class="input-text"
+                class="input-text margin-top-2"
+                :placeholder="contactForm.SecondInput"
                 required
               />
-            </div>
-          </div>
-
-          <div class="row margin-top-2">
-            <div class="col-sm-12 margin-top-2">
-              <label class="text-h4 bold">{{ contactForm.ThirdInput }}</label>
               <input
                 type="email"
                 name="user_email"
-                class="input-text"
+                class="input-text margin-top-2 padding-1"
+                :placeholder="contactForm.ThirdInput"
                 required
               />
-            </div>
-          </div>
 
-          <div class="row margin-top-2">
-            <div class="col-xs-12 margin-top-2 marginbottom-2">
-              <p class="text-h4 bold">{{ contactForm.FourthInput }}</p>
-            </div>
-
-            <div
-              class="col-xs-12 col-md-3 flex"
-              v-for="(item, index) in contactForm.contactFormWhyItem"
-              :key="index"
-            >
-              <input
-                type="radio"
-                id="goenner"
-                name="radio_input"
-                :value="item.Name"
-              />
-              <label for="goenner"
-                ><p class="margin-left-2 text-h4 t">{{ item.Name }}</p></label
-              ><br />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 padding-top-2">
-              <label class="bold text-h4">{{ contactForm.Message }}</label>
               <textarea
                 name="message"
-                class="input-text textarea padding-2"
+                class="input-text textarea padding-2 margin-top-2"
                 required
+                :placeholder="contactForm.Message"
               ></textarea>
             </div>
+            <div class="col-xs-12 col-md-6">
+              <p class="bold">{{ contactForm.FourthInput }}</p>
+              <div
+              class="flex margin-top-2 margin-bottom-2"
+                v-for="(item, index) in contactForm.contactFormWhyItem"
+                :key="index"
+              >
+        
+                <input
+                  type="radio"
+                  id="goenner"
+                  name="radio_input"
+                  class=""
+                  :value="item.Name"
+                />
+                <label for="goenner"
+                  ><p class="margin-left-2 text-h4 t">{{ item.Name }}</p></label
+                >
+              
+              
+              </div>
+            </div>
           </div>
+
+            <!--------- old ------------>
+
+       
+        
         </div>
         <div class="flex-center">
           <input
