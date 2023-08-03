@@ -3,7 +3,6 @@ import { defineComponent } from "vue";
 import teamComp from "../../components/Team/Team.vue";
 import titleBackground from "../../components/TitleBackground/TitleBackground.vue";
 import contactForm from "../../components/ContactForm/ContactForm.vue";
-import aboutUs from "../../components/AboutUs/AboutUs.vue";
 import projectTeaser from "../../components/ProjectTeaser/ProjectTeaser.vue";
 import values from "../../components/Values/Values.vue";
 import vision from "../../components/Vision/Vision.vue";
@@ -115,7 +114,6 @@ export default defineComponent({
   components: {
     titleBackground,
     contactForm,
-    aboutUs,
     projectTeaser,
     teamComp,
     values,
