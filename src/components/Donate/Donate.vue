@@ -4,12 +4,7 @@ import { Icon } from "@iconify/vue";
 export default defineComponent({
   name: "Donate",
   props: ["donate"],
-  setup() {
-    const open = ref(false);
-    return {
-      open,
-    };
-  },
+  setup() {},
   components: {
     Icon,
   },
@@ -49,24 +44,22 @@ export default defineComponent({
           >
             <h2 class="">{{ donate.Title }}</h2>
             <p>{{ donate.Text }}</p>
+            <a href="/donate">
+              <button class="button-primary width-50 margin-top-2">
+                Jetzt Spenden
+              </button>
+            </a>
 
-            <button
-              class="button-primary width-50 margin-top-2"
-              @click="open = !open"
-            >
-              Jetzt Spenden
-            </button>
             <!-- <Icon icon="ep:arrow-up-bold" :rotate="2" width="32px" /> -->
           </div>
         </div>
       </div>
     </div>
-    <div  >
+    <div>
       <div class="container margin-top-5">
-      <div class="rnw-widget-container width-100" ></div>
+        <div class="rnw-widget-container width-100"></div>
+      </div>
     </div>
-    </div>
-   
   </div>
 </template>
 

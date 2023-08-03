@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "./views/Home/Home.vue";
 import Impressum from "./views/Impressum/Impressum.vue";
 import BlogAlbanien from "./views/BlogAlbanien/BlogAlbanien.vue";
+import Donate from "./views/Donate/Donate.vue";
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: "/Impressum",
     name: "Impressum",
     component: Impressum,
+  },
+  {
+    path: "/Donate",
+    name: "Donate",
+    component: Donate,
   },
   {
     path: "/BlogAlbanien",
