@@ -1,7 +1,7 @@
 <template>
   <div id="team">
     <div class="container">
-      <h1 class="margin-bottom-2 text-center">{{ aboutUs.Title }}</h1>
+      <h2 class="margin-bottom-2 text-center">{{ aboutUs.Title }}</h2>
       <p class="margin-bottom-5 text-center">{{ aboutUs.Text }}</p>
       <div class="row">
         <div
