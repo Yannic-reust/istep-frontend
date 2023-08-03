@@ -70,7 +70,7 @@
           <input
             type="submit"
             :value="contactForm.ButtonText"
-            class="button-primary margin-top-4 button"
+            class="button-primary margin-top-4 button text-standard"
           />
         </div>
       </form>

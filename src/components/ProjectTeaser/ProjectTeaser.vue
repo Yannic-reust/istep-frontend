@@ -28,7 +28,7 @@ export default defineComponent({
             class="button-primary width-10 margin-top-4"
             @click="detailsOpen = !detailsOpen"
           >
-            {{ project.ButtonText }}
+           <p>{{ project.ButtonText }}</p> 
           </button>
         </div>
 
