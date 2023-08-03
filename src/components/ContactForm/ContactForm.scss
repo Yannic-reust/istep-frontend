@@ -3,11 +3,22 @@
     min-height: 100px;
     font-family: "Roboto";
     box-sizing: border-box;
+    cursor: text;
   }
   .success {
     color: rgba(34, 227, 111, 0.97);
   }
   .fail {
     color: red;
+  }
+  input[type=email]{
+    cursor: text;
+  }
+  input[type=text]{
+cursor: text;
+  }
+
+  .t{
+    font-family: "Roboto" !important;
   }
 }

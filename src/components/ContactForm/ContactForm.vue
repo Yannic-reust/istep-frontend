@@ -51,7 +51,7 @@
                 :value="item.Name"
               />
               <label for="goenner"
-                ><p class="margin-left-2 text-h4">{{ item.Name }}</p></label
+                ><p class="margin-left-2 text-h4 t">{{ item.Name }}</p></label
               ><br />
             </div>
           </div>
