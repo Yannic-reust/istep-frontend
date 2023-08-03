@@ -55,7 +55,6 @@ export default defineComponent({
               AboutUs {
                 Title
                 Text
-               
               }
               Donate {
                 Title
@@ -125,30 +124,34 @@ export default defineComponent({
 
 <template>
   <div id="home" v-if="result">
+    <div class="">
+      <titleBackground
+        :title="result.home.data.attributes.TitleSite"
+        :text="result.home.data.attributes.TitleText"
+      />
+    </div>
     <div class="padding-bottom-5">
-      <titleBackground :title="result.home.data.attributes.TitleSite" :text="result.home.data.attributes.TitleText" />
-    </div>
-
-    <div class="margin-top-5">
-      <teamComp :team="result.teamMembers.data"  :aboutUs="result.home.data.attributes.AboutUs"  />
-    </div>
-    <div class="margin-top-5">
-      <values :values="result.home.data.attributes.Values" />
-    </div>
-    <div class="margin-top-5">
-      <vision :vision="result.home.data.attributes.Vision" />
-    </div>
-    
-
-    <div class="margin-top-5 padding-bottom-5">
-      <donate :donate="result.home.data.attributes.Donate" />
-    </div>
-
-    <div class="margin-top-5 padding-bottom-5">
       <projectTeaser :project="result.home.data.attributes.Project" />
     </div>
 
-    <contactForm :contactForm="result.home.data.attributes.ContactForm" />
+    <div class="padding-top-5 padding-bottom-5">
+      <vision :vision="result.home.data.attributes.Vision" />
+    </div>
+    <div class="margin-top-5 margin-bottom-5">
+      <values :values="result.home.data.attributes.Values" />
+    </div>
+    <div class="margin-top-5">
+      <teamComp
+        :team="result.teamMembers.data"
+        :aboutUs="result.home.data.attributes.AboutUs"
+      />
+    </div>
+    <div class="margin-top-5 padding-bottom-5">
+      <donate :donate="result.home.data.attributes.Donate" />
+    </div>
+    <div class="margin-top-5">
+      <contactForm :contactForm="result.home.data.attributes.ContactForm" />
+    </div>
   </div>
 </template>
 

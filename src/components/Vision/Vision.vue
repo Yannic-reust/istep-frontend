@@ -13,13 +13,13 @@ export default defineComponent({
   <div id="vision">
     <div class="container">
       <h2 class="text-center margin-bottom-0">{{ vision.Title }}</h2>
-      <div class="row">
+      <div class="row equal">
         <div
           class="col-xs-12 col-md-6 margin-top-4"
           v-for="(visionItem, index) in vision.VisionItem"
           :key="index"
         >
-          <div class="bg-secondary radius-16 padding-4">
+          <div class="bg-secondary height-100 radius-16 padding-4">
             <div class="flex">
               <h3>{{ visionItem.Title }}</h3>
               <img src="" al="" class="" />

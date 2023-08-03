@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div id="projectTeaser" class="bg-secondary padding-top-5 padding-bottom-5">
+  <div id="projectTeaser" class="bg-secondary padding-top-10 padding-bottom-10">
     <div class="container margin-bottom-5">
       <div class="row">
         <div
@@ -42,54 +42,24 @@ export default defineComponent({
       </div>
     </div>
     <!------------------------------ Details ------------------------>
-    <div class="wrap ">
-      <div class="table-row">
-      
-          <div class="col-md-6 col-xs-12 table-cell bg-primary">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="col-md-6  col-xs-12 table-cell bg-primary">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-  
-       
-      </div>
-    </div>
-
-    <!-- <div class="wrap">
-      <div class="row-1">
-        <div class="left">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-    </div> -->
 
     <div class="container margin-top-5" v-if="detailsOpen">
-      <div class="cards">
+      <div class="row equal">
         <div
           v-for="(ProjectDetailBox, index) in project.ProjectDetailBox"
           :key="index"
-          class="card"
+          class="col-xs-12 col-md-6 margin-top-5 flex column space-between"
         >
-          <div class="card-content">
-            <h3>{{ ProjectDetailBox.Title }}</h3>
+          <div>
+            <h3 class="margin-bottom-2">{{ ProjectDetailBox.Title }}</h3>
             <p>{{ ProjectDetailBox.Text }}</p>
           </div>
-          <div class="card-footer">
-            <img
-              :src="`https://istep-backend.blackbox-mit.ch${ProjectDetailBox.Image.data.attributes.url}`"
-              :alt="ProjectDetailBox.Title"
-              class="Image radius-16 margin-top-5"
-            />
-          </div>
+
+          <img
+            :src="`https://istep-backend.blackbox-mit.ch${ProjectDetailBox.Image.data.attributes.url}`"
+            :alt="ProjectDetailBox.Title"
+            class="Image radius-16 margin-top-5"
+          />
         </div>
       </div>
     </div>

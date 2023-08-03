@@ -13,13 +13,13 @@ export default defineComponent({
   <div id="values" class="padding-5 bg-secondary">
     <div class="container">
       <h2 class="text-center margin-bottom-2">{{ values.Title }}</h2>
-      <div class="row">
+      <div class="row equal">
         <div
           class="col-xs-12 col-md-4 margin-top-4"
           v-for="(valueItem, index) in values.ValueItem"
           :key="index"
         >
-          <div class="bg radius-16 padding-4">
+          <div class="bg radius-16 padding-4 height-100">
             <h3>{{ valueItem.Title }}</h3>
             <p>
               {{ valueItem.Text }}
