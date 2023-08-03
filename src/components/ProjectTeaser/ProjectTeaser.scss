@@ -3,22 +3,16 @@
     display: flex;
     margin: 1rem;
     .card {
-      background-color: #eee;
-     
-      border-radius: 5px;
       display: flex;
       flex: 1 0 200px;
       flex-direction: column;
-      margin: 16px;
 
       &-content {
         flex: 1;
-        padding: 16px;
       }
 
       &-footer {
         display: flex;
-        padding: 16px;
       }
 
       &-image {
@@ -52,3 +46,37 @@
     }
   }
 }
+
+
+
+.table-cell{
+  display: table-cell;
+}
+.table-row{
+  display: table-row;
+}
+
+
+
+.wrap{
+  overflow:hidden;
+  width:100%;
+  display: table;
+  border-collapse: collapse;
+}
+/*
+.row-1 {
+  display: table-row;
+}
+.left{
+  width: 50%;
+  display: table-cell; 
+  background-color: #0f0;
+}
+
+
+.right{
+  width: 50%;
+  background-color: #f00;
+  display: table-cell;     
+}*/

@@ -4,7 +4,7 @@ import { Icon } from '@iconify/vue';
 
 export default defineComponent({
   name: "TitleBackground",
-  props: ['title'],
+  props: ['title', 'text'],
   components:{
     Icon,
   },
@@ -17,6 +17,7 @@ export default defineComponent({
     <div class="image" />
     <div class="textBox">
       <h1 class="text-d1 secondary thin">{{title}}</h1>
+      <p class="text-h4 secondary margin-bottom-2">{{text}}</p>
       <a href="#team">
         <Icon icon="mdi:arrow-down" color="white" width="72" height="72" />
       </a>

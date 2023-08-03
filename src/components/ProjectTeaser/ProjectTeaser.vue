@@ -42,6 +42,36 @@ export default defineComponent({
       </div>
     </div>
     <!------------------------------ Details ------------------------>
+    <div class="wrap ">
+      <div class="table-row">
+      
+          <div class="col-md-6 col-xs-12 table-cell bg-primary">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-md-6  col-xs-12 table-cell bg-primary">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+  
+       
+      </div>
+    </div>
+
+    <!-- <div class="wrap">
+      <div class="row-1">
+        <div class="left">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="right">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div> -->
+
     <div class="container margin-top-5" v-if="detailsOpen">
       <div class="cards">
         <div
@@ -51,11 +81,9 @@ export default defineComponent({
         >
           <div class="card-content">
             <h3>{{ ProjectDetailBox.Title }}</h3>
-          <p>{{ ProjectDetailBox.Text }}</p>
+            <p>{{ ProjectDetailBox.Text }}</p>
           </div>
-          <div  class="card-footer">
-           
-
+          <div class="card-footer">
             <img
               :src="`https://istep-backend.blackbox-mit.ch${ProjectDetailBox.Image.data.attributes.url}`"
               :alt="ProjectDetailBox.Title"
@@ -64,8 +92,6 @@ export default defineComponent({
           </div>
         </div>
       </div>
-
-    
     </div>
   </div>
 </template>

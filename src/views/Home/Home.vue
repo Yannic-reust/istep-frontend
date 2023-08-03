@@ -38,6 +38,7 @@ export default defineComponent({
           data {
             attributes {
               TitleSite
+              TitleText
               Values {
                 Title
                 ValueItem {
@@ -55,13 +56,7 @@ export default defineComponent({
               AboutUs {
                 Title
                 Text
-                Image {
-                  data {
-                    attributes {
-                      url
-                    }
-                  }
-                }
+               
               }
               Donate {
                 Title
@@ -133,11 +128,11 @@ export default defineComponent({
 <template>
   <div id="home" v-if="result">
     <div class="padding-bottom-5">
-      <titleBackground :title="result.home.data.attributes.TitleSite" />
+      <titleBackground :title="result.home.data.attributes.TitleSite" :text="result.home.data.attributes.TitleText" />
     </div>
 
     <div class="margin-top-5">
-      <teamComp :team="result.teamMembers.data" />
+      <teamComp :team="result.teamMembers.data"  :aboutUs="result.home.data.attributes.AboutUs"  />
     </div>
     <div class="margin-top-5">
       <values :values="result.home.data.attributes.Values" />
@@ -145,9 +140,7 @@ export default defineComponent({
     <div class="margin-top-5">
       <vision :vision="result.home.data.attributes.Vision" />
     </div>
-    <div class="margin-top-5">
-      <aboutUs :aboutUs="result.home.data.attributes.AboutUs" />
-    </div>
+    
 
     <div class="margin-top-5 padding-bottom-5">
       <donate :donate="result.home.data.attributes.Donate" />

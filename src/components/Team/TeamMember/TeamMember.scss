@@ -1,5 +1,5 @@
 #projectTeaser {
-  .Image{
+  .Image {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -8,19 +8,13 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .card{
+  .card {
     width: 100%;
     margin-left: 0%;
- 
   }
 }
 
-
-
-
 .card {
-  width: 80%;
-  margin-left: 10%;
   aspect-ratio: 3/4;
   perspective: 100rem;
   position: relative;
@@ -52,7 +46,6 @@
       overflow: hidden;
 
       p {
-
         height: 100%;
         padding: 2rem;
         overflow-y: scroll;
@@ -71,7 +64,6 @@
           background-color: #555;
         }
       }
-      
     }
   }
 

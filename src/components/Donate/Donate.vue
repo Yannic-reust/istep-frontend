@@ -22,7 +22,7 @@ export default defineComponent({
           <img
             :src="`https://istep-backend.blackbox-mit.ch${donate.Image.data.attributes.url}`"
             alt="Team Bild"
-            class="img margin-left-10 radius-16"
+            class="img radius-16"
           />
         </div>
         <div class="col-xs-12 col-md-6">
