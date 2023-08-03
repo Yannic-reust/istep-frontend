@@ -10,7 +10,7 @@
           v-for="(teamMember, index) in team"
           :key="index"
         >
-       asdasd
+    
           <TeamMember
             :name="teamMember.attributes.Name"
             :text="teamMember.attributes.Text"
