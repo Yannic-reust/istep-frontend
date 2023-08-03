@@ -68,6 +68,7 @@ export default defineComponent({
               Donate {
                 Title
                 Text
+                ButtonText
                 Image {
                   data {
                     attributes {
@@ -106,6 +107,7 @@ export default defineComponent({
                 ThirdInput
                 FourthInput
                 Message
+                ButtonText
                 contactFormWhyItem {
                   Name
                 }

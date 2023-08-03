@@ -69,7 +69,7 @@
         <div class="flex-center">
           <input
             type="submit"
-            value="Nachricht Senden"
+            :value="contactForm.ButtonText"
             class="button-primary margin-top-4 button"
           />
         </div>
@@ -77,12 +77,11 @@
     </div>
 
     <div class="container margin-top-5" v-if="success">
-      <h5 class="success text-center">Deine Nachricht wurde gesendet!</h5>
+      <h5 class="success text-center">message sent</h5>
     </div>
     <div class="container" v-if="fail">
       <h5 class="fail text-center">
-        Es ist leider ein Fehler aufgetetten, versuche es nochmal oder sende uns
-        direkt eine Nachricht.
+        There is an error, try again or send us a message directly.
       </h5>
     </div>
   </div>

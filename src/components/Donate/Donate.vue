@@ -30,7 +30,7 @@ export default defineComponent({
             <p>{{ donate.Text }}</p>
             <a href="/donate">
               <button class="button-primary width-50 margin-top-2">
-                Jetzt Spenden
+                {{ donate.ButtonText }}
               </button>
             </a>
 
