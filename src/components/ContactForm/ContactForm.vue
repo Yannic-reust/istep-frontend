@@ -7,15 +7,24 @@
         <div class="container">
           <div class="row margin-top-2">
             <div class="col-sm-12 col-md-6 margin-top-2">
-              <label class="primary text-h4">{{
-                contactForm.FirstInput
-              }}</label>
+              <label class="bold text-h4">{{ contactForm.FirstInput }}</label>
               <input type="text" name="user_name" class="input-text" required />
             </div>
+
             <div class="col-sm-12 col-md-6 margin-top-2">
-              <label class="primary text-h4">{{
-                contactForm.SecondInput
-              }}</label>
+              <label class="bold text-h4">{{ contactForm.SecondInput }}</label>
+              <input
+                type="text"
+                name="user_name2"
+                class="input-text"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row margin-top-2">
+            <div class="col-sm-12 margin-top-2">
+              <label class="text-h4 bold">{{ contactForm.ThirdInput }}</label>
               <input
                 type="email"
                 name="user_email"
@@ -25,9 +34,9 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row margin-top-2">
             <div class="col-xs-12 margin-top-2 marginbottom-2">
-              <p class="text-h4">{{ contactForm.ThirdInput }}</p>
+              <p class="text-h4 bold">{{ contactForm.FourthInput }}</p>
             </div>
 
             <div
@@ -48,7 +57,7 @@
           </div>
           <div class="row">
             <div class="col-sm-12 padding-top-2">
-              <label class="primary text-h4">{{ contactForm.Message }}</label>
+              <label class="bold text-h4">{{ contactForm.Message }}</label>
               <textarea
                 name="message"
                 class="input-text textarea padding-2"

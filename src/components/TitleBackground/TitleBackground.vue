@@ -16,11 +16,14 @@ export default defineComponent({
   <div id="titleBackground">
     <div class="image" />
     <div class="textBox">
-      <h1 class="text-d1 secondary thin">{{title}}</h1>
-      <p class="text-h4 secondary margin-bottom-2">{{text}}</p>
-      <a href="#team">
+      <h1 class="text-d3 secondary thin ">{{title}}</h1>
+      <!-- <p class="text-h4 secondary margin-bottom-2 margin-top-1">{{text}}</p> -->
+      <div class="margin-top-4">
+        <a href="#projectTeaser">
         <Icon icon="mdi:arrow-down" color="white" width="72" height="72" />
       </a>
+      </div>
+     
     
       <!-- <p class="text-h4 font-secondary secondary">into my future</p> -->
     </div>

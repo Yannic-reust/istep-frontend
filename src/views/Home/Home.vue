@@ -95,6 +95,7 @@ export default defineComponent({
                 FirstInput
                 SecondInput
                 ThirdInput
+                FourthInput
                 Message
                 contactFormWhyItem {
                   Name
