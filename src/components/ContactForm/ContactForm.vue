@@ -10,7 +10,7 @@
               <input
                 type="text"
                 name="user_name"
-                class="input-text "
+                class="input-text"
                 :placeholder="contactForm.FirstInput"
                 required
               />
@@ -36,14 +36,13 @@
                 :placeholder="contactForm.Message"
               ></textarea>
             </div>
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12 col-md-6 margin-top-4">
               <p class="bold">{{ contactForm.FourthInput }}</p>
               <div
-              class="flex margin-top-2 margin-bottom-2"
+                class="flex margin-top-2 margin-bottom-2"
                 v-for="(item, index) in contactForm.contactFormWhyItem"
                 :key="index"
               >
-        
                 <input
                   type="radio"
                   id="goenner"
@@ -54,16 +53,11 @@
                 <label for="goenner"
                   ><p class="margin-left-2 text-h4 t">{{ item.Name }}</p></label
                 >
-              
-              
               </div>
             </div>
           </div>
 
-            <!--------- old ------------>
-
-       
-        
+          <!--------- old ------------>
         </div>
         <div class="flex-center">
           <input
@@ -100,9 +94,7 @@ export default defineComponent({
       openForm: false,
     };
   },
-  mounte() {
-    console.log(this.contactForm);
-  },
+  mounte() {},
   methods: {
     sendEmail() {
       emailjs

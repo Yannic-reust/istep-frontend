@@ -69,25 +69,13 @@ export default defineComponent({
                 Title
                 Text
                 ButtonText
-                Image {
-                  data {
-                    attributes {
-                      url
-                    }
-                  }
-                }
+              
               }
               Project {
                 Title
                 Text
                 ButtonText
-                Image {
-                  data {
-                    attributes {
-                      url
-                    }
-                  }
-                }
+               
                 ProjectDetailBox {
                   Title
                   Text
