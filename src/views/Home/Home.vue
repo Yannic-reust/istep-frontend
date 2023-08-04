@@ -96,6 +96,8 @@ export default defineComponent({
                 FourthInput
                 Message
                 ButtonText
+                SuccessText
+                FailedText
                 contactFormWhyItem {
                   Name
                 }

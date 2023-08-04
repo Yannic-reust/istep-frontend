@@ -69,11 +69,11 @@
     </div>
 
     <div class="container margin-top-5" v-if="success">
-      <h5 class="success text-center">message sent</h5>
+      <h5 class="success text-center">{{contactForm.SuccessText}}</h5>
     </div>
     <div class="container" v-if="fail">
       <h5 class="fail text-center">
-        There is an error, try again or send us a message directly.
+        {{contactForm.FailedText}}
       </h5>
     </div>
   </div>
@@ -93,7 +93,6 @@ export default defineComponent({
       openForm: false,
     };
   },
-  mounte() {},
   methods: {
     sendEmail() {
       emailjs
