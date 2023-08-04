@@ -10,8 +10,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <div id="values" class="padding-5 ">
-    <div class="container margin-top-5">
+  <div id="values" class="padding-5 margin-b ">
+    <div class="container margin-top-5 margin-bottom-5">
       <h2 class="text-center margin-bottom-2">{{ values.Title }}</h2>
       <div class="row equal">
         <div
