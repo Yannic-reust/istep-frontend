@@ -137,21 +137,21 @@ export default defineComponent({
     <div class="padding-top-5 padding-bottom-5">
       <vision :vision="result.home.data.attributes.Vision" />
     </div>
-    <div class="margin-top-5 margin-bottom-5">
+    <div class="">
       <values :values="result.home.data.attributes.Values" />
     </div>
-    <div class="margin-top-5">
+
       <teamComp
         :team="result.teamMembers.data"
         :aboutUs="result.home.data.attributes.AboutUs"
       />
-    </div>
+
     <div class="margin-top-5 padding-bottom-5">
       <donate :donate="result.home.data.attributes.Donate" />
     </div>
-    <div class="margin-top-5">
+  
       <contactForm :contactForm="result.home.data.attributes.ContactForm" />
-    </div>
+
   </div>
 </template>
 

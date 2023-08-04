@@ -13,8 +13,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <div id="projectTeaser" class="bg-secondary padding-top-10 padding-bottom-10">
-    <div class="container margin-bottom-5">
+  <div id="projectTeaser" class="bg-secondary padding-top-5 padding-bottom-5">
+    <div class="container padding-bottom-5 padding-top-5">
       <div class="row">
         <div
           class="col-xs-12"
