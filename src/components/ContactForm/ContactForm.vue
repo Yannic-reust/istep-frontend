@@ -1,12 +1,11 @@
 <template>
-  <div id="contactForm" class="padding-top-5 padding-bottom-5 bg-secondary">
+  <div id="contactForm" class=" padding-bottom-5 bg-secondary">
     <h2 class="primary text-center margin-bottom-5 padding-top-5">{{ contactForm.Title }}</h2>
-
     <div>
       <form ref="form" id="myForm" @submit.prevent="sendEmail">
         <div class="container">
-          <div class="row margin-top-2">
-            <div class="col-xs-12 col-md-6">
+          <div class="row ">
+            <div class="col-xs-12 col-md-6 margin-top-4">
               <input
                 type="text"
                 name="user_name"
