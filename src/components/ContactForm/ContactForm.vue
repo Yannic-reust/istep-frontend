@@ -1,5 +1,5 @@
 <template>
-  <div id="contactForm" class="padding-top-10 padding-bottom-10 bg-secondary">
+  <div id="contactForm" class="padding-top-5 padding-bottom-5 bg-secondary">
     <h2 class="primary text-center margin-bottom-5">{{ contactForm.Title }}</h2>
 
     <div>

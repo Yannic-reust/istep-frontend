@@ -11,7 +11,7 @@ export default defineComponent({
 
 <template>
   <div id="values" class="padding-5 ">
-    <div class="container">
+    <div class="container margin-top-5">
       <h2 class="text-center margin-bottom-2">{{ values.Title }}</h2>
       <div class="row equal">
         <div

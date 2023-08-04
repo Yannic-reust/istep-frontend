@@ -13,7 +13,7 @@ export default defineComponent({
 
 <template>
   <div>
-    <div id="donate" class="padding-10">
+    <div id="donate" class="padding-5">
       <div class="container">
       
             <h2 class="margin-bottom-1">{{ donate.Title }}</h2>
