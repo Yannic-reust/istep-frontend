@@ -20,11 +20,11 @@ const routes = [
     name: "Donate",
     component: Donate,
   },
-  {
+ /* {
     path: "/BlogAlbanien",
     name: "BlogAlbanien",
     component: BlogAlbanien,
-  },
+  },*/
 ];
 
 const router = createRouter({
