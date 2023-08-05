@@ -60,8 +60,8 @@ export default defineComponent({
 
 <template>
   <div>
-    <div class="container margin-top-5 padding-top-5 margin-bottom-5" v-if="result">
-      <p class="margin-bottom-5">{{result.data.attributes.Donate}}</p>
+    <div class="container margin-top-5 padding-top-5 margin-bottom-5" >
+      <p class="margin-bottom-5" v-if="result">{{result.donate.data.attributes.Donate}}</p>
       <div class="rnw-widget-container width-100"></div>
     </div>
   </div>
