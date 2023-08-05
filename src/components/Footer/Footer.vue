@@ -6,7 +6,7 @@
         <div class="col-sm-12 col-md-6 item text text-center">
           <ul>
             <li class="padding-top-1 padding-bottom-1" v-for="(item, index) in footer" :key="index"> 
-              <a :href="'/'+ item.Link" class="secondary decoration-none">
+              <a :href="'https://istep.ch/'+ item.Link" class="secondary decoration-none">
                {{item.Name}}
               </a>
             </li>

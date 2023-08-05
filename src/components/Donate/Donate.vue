@@ -17,7 +17,7 @@ export default defineComponent({
       <div class="container flex-center">
         <h2 class="margin-bottom-1">{{ donate.Title }}</h2>
         <p>{{ donate.Text }}</p>
-        <a href="/donate">
+        <a href="https://istep.ch/donate">
           <button class="button-primary margin-top-2">
             <p>{{ donate.ButtonText }}</p>
           </button>
