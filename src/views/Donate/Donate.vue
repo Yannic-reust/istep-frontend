@@ -1,6 +1,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useStore } from "vuex";
+import { useQuery } from "@vue/apollo-composable";
+import gql from "graphql-tag";
 export default defineComponent({
   name: "DonateView",
   props: ["donate"],
@@ -9,7 +11,26 @@ export default defineComponent({
       store: useStore(),
     };
   },
-  setup() {},
+  setup() {
+    const store = useStore();
+
+    const variables = { locale: store.state.currentLanguage.code };
+
+    const donate = gql`
+      query donate($locale: I18NLocaleCode) {
+        donate(locale: $locale) {
+          data {
+            attributes {
+             Donate
+            }
+          }
+        }
+      }
+    `;
+    const { result, loading, error } = useQuery(donate, variables);
+
+    return { result };
+  },
   components: {},
   created() {
     var scripts = ["https://tamaro.raisenow.com/istep-b7da/latest/widget.js"];
@@ -32,14 +53,15 @@ export default defineComponent({
       window.rnw.tamaro.runWidget(".rnw-widget-container", {
         language: this.store.state.currentLanguage.code,
       });
-    },100);
+    }, 100);
   },
 });
 </script>
 
 <template>
   <div>
-    <div class="container margin-top-5 padding-top-5 margin-bottom-5">
+    <div class="container margin-top-5 padding-top-5 margin-bottom-5" v-if="result">
+      <p class="margin-bottom-5">{{result.data.attributes.Donate}}</p>
       <div class="rnw-widget-container width-100"></div>
     </div>
   </div>

@@ -14,7 +14,7 @@ export default defineComponent({
 
 <template>
   <div id="projectTeaser" class="bg-secondary padding-top-5 padding-bottom-5">
-    <div class="container padding-bottom-5 padding-top-5">
+    <div class="container  padding-top-5">
       <div class="row">
         <div
           class="col-xs-12"
@@ -43,14 +43,14 @@ export default defineComponent({
     </div>
     <!------------------------------ Details ------------------------>
 
-    <div class="container margin-top-5" >
+    <div class="container " >
       <div class="row">
         <div
           v-for="(ProjectDetailBox, index) in project.ProjectDetailBox"
           :key="index"
           class="col-xs-12 col-md-6 margin-top-5 flex column space-between"
         >
-        <h3 class="margin-bottom-2 text-center">{{ ProjectDetailBox.Title }}</h3>
+        <h3 class="margin-bottom-2 text-center margin">{{ ProjectDetailBox.Title }}</h3>
         <img
             :src="`https://istep-backend.blackbox-mit.ch${ProjectDetailBox.Image.data.attributes.url}`"
             :alt="ProjectDetailBox.Title"
