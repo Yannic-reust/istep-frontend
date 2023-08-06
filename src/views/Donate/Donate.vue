@@ -41,12 +41,7 @@ export default defineComponent({
     });
   },
   mounted() {
-    var scripts = ["./tamaro.js"];
-    scripts.forEach((script) => {
-      let tag = document.createElement("script");
-      tag.setAttribute("src", script);
-      document.head.appendChild(tag);
-    });
+   
 
     setTimeout(() => {
       //@ts-ignore
