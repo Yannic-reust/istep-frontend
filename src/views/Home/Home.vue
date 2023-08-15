@@ -18,15 +18,7 @@ export default defineComponent({
 
     const home = gql`
       query home($locale: I18NLocaleCode) {
-        navigation(locale: $locale) {
-          data {
-            attributes {
-             Item{
-              Name
-             }
-            }
-          }
-        }
+       
         teamMembers(locale: $locale) {
           data {
             attributes {
@@ -75,7 +67,6 @@ export default defineComponent({
                 Title
                 Text
                 ButtonText
-               
                 ProjectDetailBox {
                   Title
                   Text
@@ -88,7 +79,13 @@ export default defineComponent({
                   }
                 }
               }
-              ContactForm {
+             
+            }
+          }
+        }
+        contactForm(locale: $locale) {
+          data {
+            attributes {
                 Title
                 FirstInput
                 SecondInput
@@ -104,7 +101,6 @@ export default defineComponent({
               }
             }
           }
-        }
       }
     `;
     const { result, loading, error } = useQuery(home, variables);
@@ -143,16 +139,16 @@ export default defineComponent({
       <values :values="result.home.data.attributes.Values" />
     </div>
 
-      <teamComp
+       <teamComp
         :team="result.teamMembers.data"
         :aboutUs="result.home.data.attributes.AboutUs"
-      />
+      /> 
 
     <div class="margin-top-5 padding-bottom-5">
       <donate :donate="result.home.data.attributes.Donate" />
     </div>
   
-      <contactForm :contactForm="result.home.data.attributes.ContactForm" />
+      <contactForm :contactForm="result.contactForm.data.attributes" />
 
   </div>
 </template>
