@@ -158,7 +158,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):s
               Project {
                 Title
                 Text
-                ButtonText
+       
                 ProjectDetailBox {
                   Title
                   Text
@@ -194,7 +194,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`):s
             }
           }
       }
-    `,{result:r,loading:i,error:o}=ji(n,t);return{result:r}},components:{titleBackground:rE,contactForm:AE,projectTeaser:UE,teamComp:K_,values:ZE,vision:cw,donate:gw}}),_w={key:0,id:"home"},Ew={class:"padding-bottom-5"},ww={class:"padding-top-5 padding-bottom-5"},Ow={class:""},Sw={class:"margin-top-5 padding-bottom-5"};function xw(e,t,n,r,i,o){const s=tt("titleBackground"),a=tt("projectTeaser"),c=tt("vision"),u=tt("values"),l=tt("teamComp"),f=tt("donate"),h=tt("contactForm");return e.result?(ie(),ae("div",_w,[D("div",null,[Ee(s,{title:e.result.home.data.attributes.TitleSite,text:e.result.home.data.attributes.TitleText},null,8,["title","text"])]),D("div",Ew,[Ee(a,{project:e.result.home.data.attributes.Project},null,8,["project"])]),D("div",ww,[Ee(c,{vision:e.result.home.data.attributes.Vision},null,8,["vision"])]),D("div",Ow,[Ee(u,{values:e.result.home.data.attributes.Values},null,8,["values"])]),Ee(l,{team:e.result.teamMembers.data,aboutUs:e.result.home.data.attributes.AboutUs},null,8,["team","aboutUs"]),D("div",Sw,[Ee(f,{donate:e.result.home.data.attributes.Donate},null,8,["donate"])]),Ee(h,{contactForm:e.result.contactForm.data.attributes},null,8,["contactForm"])])):Vt("",!0)}const Tw=Ge(bw,[["render",xw],["__scopeId","data-v-016c20a9"]]),Iw=Qe({name:"Impressum",setup(){const t={locale:qn().state.currentLanguage.code},n=Li`
+    `,{result:r,loading:i,error:o}=ji(n,t);return{result:r}},components:{titleBackground:rE,contactForm:AE,projectTeaser:UE,teamComp:K_,values:ZE,vision:cw,donate:gw}}),_w={key:0,id:"home"},Ew={class:"padding-bottom-5"},ww={class:"padding-top-5 padding-bottom-5"},Ow={class:""},Sw={class:"margin-top-5 padding-bottom-5"};function xw(e,t,n,r,i,o){const s=tt("titleBackground"),a=tt("projectTeaser"),c=tt("vision"),u=tt("values"),l=tt("teamComp"),f=tt("donate"),h=tt("contactForm");return e.result?(ie(),ae("div",_w,[D("div",null,[Ee(s,{title:e.result.home.data.attributes.TitleSite,text:e.result.home.data.attributes.TitleText},null,8,["title","text"])]),D("div",Ew,[Ee(a,{project:e.result.home.data.attributes.Project},null,8,["project"])]),D("div",ww,[Ee(c,{vision:e.result.home.data.attributes.Vision},null,8,["vision"])]),D("div",Ow,[Ee(u,{values:e.result.home.data.attributes.Values},null,8,["values"])]),Ee(l,{team:e.result.teamMembers.data,aboutUs:e.result.home.data.attributes.AboutUs},null,8,["team","aboutUs"]),D("div",Sw,[Ee(f,{donate:e.result.home.data.attributes.Donate},null,8,["donate"])]),Ee(h,{contactForm:e.result.contactForm.data.attributes},null,8,["contactForm"])])):Vt("",!0)}const Tw=Ge(bw,[["render",xw],["__scopeId","data-v-d3752434"]]),Iw=Qe({name:"Impressum",setup(){const t={locale:qn().state.currentLanguage.code},n=Li`
       query impressum($locale: I18NLocaleCode) {
         impressum(locale: $locale) {
           data {

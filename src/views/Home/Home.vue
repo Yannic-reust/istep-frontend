@@ -66,7 +66,7 @@ export default defineComponent({
               Project {
                 Title
                 Text
-                ButtonText
+       
                 ProjectDetailBox {
                   Title
                   Text
