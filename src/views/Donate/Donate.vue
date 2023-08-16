@@ -58,10 +58,10 @@ export default defineComponent({
         {{ result.donate.data.attributes.Donate }}
       </p>
       <p class="margin-bottom-5">
-        <a href="https://www.raisenow.com/">RaiseNow</a>
+        <a href="https://www.raisenow.com/" target="_blank">RaiseNow</a>
         <br />
     
-        <a href="https://fairgive.org/">FairGive</a>
+        <a href="https://fairgive.org/" target="_blank">FairGive</a>
       </p>
 
       <div class="rnw-widget-container width-100"></div>
