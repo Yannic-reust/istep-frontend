@@ -46,7 +46,7 @@ export default defineComponent({
       window.rnw.tamaro.runWidget(".rnw-widget-container", {
         language: this.store.state.currentLanguage.code,
       });
-    }, 100);
+    }, 300);
   },
 });
 </script>
