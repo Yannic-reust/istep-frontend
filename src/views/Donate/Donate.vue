@@ -21,7 +21,7 @@ export default defineComponent({
         donate(locale: $locale) {
           data {
             attributes {
-             Donate
+              Donate
             }
           }
         }
@@ -41,8 +41,6 @@ export default defineComponent({
     });
   },
   mounted() {
-   
-
     setTimeout(() => {
       //@ts-ignore
       window.rnw.tamaro.runWidget(".rnw-widget-container", {
@@ -54,9 +52,18 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
-    <div class="container margin-top-5 padding-top-5 margin-bottom-5" >
-      <p class="margin-bottom-5" v-if="result">{{result.donate.data.attributes.Donate}}</p>
+  <div id="donate">
+    <div class="container margin-top-5 padding-top-5 margin-bottom-5">
+      <p class="margin-bottom-5" v-if="result">
+        {{ result.donate.data.attributes.Donate }}
+      </p>
+      <p class="margin-bottom-5">
+        <a href="https://www.raisenow.com/">RaiseNow</a>
+        <br />
+    
+        <a href="https://fairgive.org/">FairGive</a>
+      </p>
+
       <div class="rnw-widget-container width-100"></div>
     </div>
   </div>
