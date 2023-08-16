@@ -36,7 +36,7 @@
               ></textarea>
             </div>
             <div class="col-xs-12 col-md-6 margin-top-4">
-              <p class="bold">{{ contactForm.FourthInput }}</p>
+              <p class="">{{ contactForm.FourthInput }}</p>
               <div
                 class="flex margin-top-2 margin-bottom-2"
                 v-for="(item, index) in contactForm.contactFormWhyItem"
@@ -50,13 +50,13 @@
                   :value="item.Name"
                 />
                 <label for="goenner"
-                  ><p class="margin-left-2 text-h4 t">{{ item.Name }}</p></label
+                  ><p class="margin-left-2 t">{{ item.Name }}</p></label
                 >
               </div>
             </div>
           </div>
 
-          <!--------- old ------------>
+        
         </div>
         <div class="flex-center">
           <input

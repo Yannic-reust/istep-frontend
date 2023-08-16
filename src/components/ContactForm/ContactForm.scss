@@ -6,6 +6,7 @@
     cursor: text;
     border: none;
     font-size: 16px;
+    resize: vertical;
   }
   .success {
     color: rgba(34, 227, 111, 0.97);
@@ -26,7 +27,5 @@
     border: none;
   }
 
-  .t {
-    font-family: "Roboto" !important;
-  }
+  
 }
