@@ -17,11 +17,12 @@ export default defineComponent({
       <div class="container flex-center">
         <h2 class="margin-bottom-1">{{ donate.Title }}</h2>
         <p>{{ donate.Text }}</p>
-        <a href="https://istep.ch/donate">
+        <router-link to="/donate">
           <button class="button-primary margin-top-2">
             <p>{{ donate.ButtonText }}</p>
-          </button>
-        </a>
+          </button></router-link
+        >
+
         <!-- <Icon icon="ep:arrow-up-bold" :rotate="2" width="32px" /> -->
       </div>
     </div>

@@ -12,14 +12,11 @@ const store = createStore({
   },
   mutations: {
     langChange(state, payload) {
-      state.currentLanguage = payload
-     
-      
+      state.currentLanguage = payload;
     },
   },
   actions: {
-    setLanguage(context, {lang}) {
-     
+    setLanguage(context, { lang }) {
       context.commit("langChange", lang);
     },
   },
