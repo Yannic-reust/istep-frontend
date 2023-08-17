@@ -22,6 +22,9 @@ export default defineComponent({
           data {
             attributes {
               Donate
+              BankVerbindungen
+              QrRechnung
+              CreditcardDonation
             }
           }
         }
@@ -52,18 +55,39 @@ export default defineComponent({
 </script>
 
 <template>
-  <div id="donate">
+  <div id="donate" v-if="result">
     <div class="container margin-top-5 padding-top-5 margin-bottom-5">
-      <p class="margin-bottom-5" v-if="result">
+      <p class="margin-bottom-5" >
         {{ result.donate.data.attributes.Donate }}
       </p>
       <p class="margin-bottom-5">
         <a href="https://www.raisenow.com/" target="_blank">RaiseNow</a>
         <br />
-    
+
         <a href="https://fairgive.org/" target="_blank">FairGive</a>
       </p>
 
+      <div>
+        <div class="margin-bottom-5">
+           <p class="margin-bottom-2 text-h4">
+            {{ result.donate.data.attributes.BankVerbindungen }}
+          </p> 
+          <img src="/QR-Rechnung.png" alt="" class="width-100" /> 
+        </div>
+
+        <div class="margin-bottom-5">
+          <p class="text-h4">
+            {{ result.donate.data.attributes.BankVerbindungen }}
+          </p> 
+          <p>CH68 0900 0000 1617 1693 4</p>
+          <p>iSTEP</p>
+          <p>Weingartenstrasse 6</p>
+          <p>3417 Rüegsau</p>
+        </div>
+      </div>
+       <p class="text-h4 margin-bottom-5">
+            {{ result.donate.data.attributes.CreditcardDonation }}
+          </p>
       <div class="rnw-widget-container width-100"></div>
     </div>
   </div>

@@ -6,12 +6,14 @@
         <div class="container">
           <div class="row ">
             <div class="col-xs-12 col-md-6 margin-top-4">
+            
               <input
                 type="text"
                 name="user_name"
                 class="input-text"
                 :placeholder="contactForm.FirstInput"
                 required
+                oninvalid="this.setCustomValidity('bitte ausfüllen / please fill this out')"
               />
               <input
                 type="text"
@@ -19,6 +21,7 @@
                 class="input-text margin-top-2"
                 :placeholder="contactForm.SecondInput"
                 required
+                oninvalid="this.setCustomValidity('bitte ausfüllen / please fill this out')"
               />
               <input
                 type="email"
@@ -26,6 +29,7 @@
                 class="input-text margin-top-2 padding-1"
                 :placeholder="contactForm.ThirdInput"
                 required
+                oninvalid="this.setCustomValidity('bitte ausfüllen / please fill this out')"
               />
 
               <textarea
@@ -33,6 +37,8 @@
                 class="input-text textarea padding-2 margin-top-2"
                 required
                 :placeholder="contactForm.Message"
+                
+                oninvalid="this.setCustomValidity('bitte ausfüllen / please fill this out')"
               ></textarea>
             </div>
             <div class="col-xs-12 col-md-6 margin-top-4">
@@ -46,7 +52,6 @@
                   type="radio"
                   id="goenner"
                   name="radio_input"
-                  class=""
                   :value="item.Name"
                 />
                 <label for="goenner"

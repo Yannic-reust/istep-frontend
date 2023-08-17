@@ -28,7 +28,10 @@ export default defineComponent({
 
     <div class="navContainer flex space-between height-100">
       <div class="width-10 margin-left-5 flex align-center">
-        <h2 class="secondary thin">iSTEP</h2>
+        <router-link to="/" class="none">
+          <h2 class="secondary thin ">iSTEP</h2>
+        </router-link>
+      
       </div>
       <div class="width-90 flex justify-end height-100">
         <div
