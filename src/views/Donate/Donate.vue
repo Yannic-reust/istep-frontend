@@ -60,9 +60,10 @@ export default defineComponent({
       <div>
         <div class="margin-bottom-5">
           <p class="margin-bottom-2 text-h4">
-            {{ result.donate.data.attributes.BankVerbindungen }}
+            {{ result.donate.data.attributes.QrRechnung }}
           </p>
-          <img src="/QR-Rechnung.png" alt="" class="width-100" />
+          <img src="/QR-Rechnung.png" alt="qr rechnung" class="width-100 margin-bottom-2" />
+          <a href="/QR_Rechnung.pdf" download>Download</a>
         </div>
 
         <div class="margin-bottom-5">
@@ -75,6 +76,14 @@ export default defineComponent({
           <p>3417 Rüegsau</p>
         </div>
       </div>
+      <div>
+        <p class="text-h4">Donate via Twint</p>
+        <div class="width-100 flex-center">
+          <img src="/twint.png" alt="twint qr code" class="img" />
+        </div>
+      
+      </div>
+
       <p class="text-h4 margin-bottom-2">
         {{ result.donate.data.attributes.CreditcardDonation }}
       </p>
