@@ -57,7 +57,7 @@ export default defineComponent({
         <p
           v-for="(navItem, index) in navItems"
           :key="index"
-          class="text-center text-h2 secondary"
+          class="text-center text-h2 secondary margin-5"
           @click="showNav = !showNav"
         >
           <a
