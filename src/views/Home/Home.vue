@@ -66,7 +66,6 @@ export default defineComponent({
               Project {
                 Title
                 Text
-       
                 ProjectDetailBox {
                   Title
                   Text
