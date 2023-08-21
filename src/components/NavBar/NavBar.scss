@@ -4,6 +4,9 @@
   background-color: $primary;
   height: 80px;
   width: 100%;
+  .test{
+    align-items: baseline;
+  }
   .none{
    text-decoration: none; 
   }

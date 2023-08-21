@@ -3,7 +3,7 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "Navbar",
-  props:["navbar"],
+  props: ["navbar"],
   setup() {
     const navItems = [
       { name: "Projekte", link: "projectTeaser" },
@@ -25,14 +25,12 @@ export default defineComponent({
 
 <template>
   <div id="navBar">
-
     <div class="navContainer flex space-between height-100">
-      <div class="width-20 margin-left-5 flex align-center">
-        <router-link to="/" class="none">
-          <h2 class="secondary">iSTEP</h2>
-        </router-link>
-        <p class="secondary margin-left-1">into my future</p>
-      
+      <div class="width-30 margin-left-5 flex align-center">
+        <div class="test flex">
+          <router-link to="/" class="none secondary text-h2 bold">iSTEP</router-link>
+          <p class="secondary margin-left-1">into my future</p>
+        </div>
       </div>
       <div class="width-90 flex justify-end height-100">
         <div
