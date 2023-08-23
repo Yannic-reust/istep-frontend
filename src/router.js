@@ -3,6 +3,7 @@ import Home from "./views/Home/Home.vue";
 import Impressum from "./views/Impressum/Impressum.vue";
 import BlogAlbanien from "./views/BlogAlbanien/BlogAlbanien.vue";
 import Donate from "./views/Donate/Donate.vue";
+import BlogPostAlbanien from "./views/BlogPostAlbanien/BlogPostAlbanien.vue";
 
 const routes = [
   {
@@ -20,11 +21,16 @@ const routes = [
     name: "Donate",
     component: Donate,
   },
- /* {
+  {
     path: "/BlogAlbanien",
     name: "BlogAlbanien",
     component: BlogAlbanien,
-  },*/
+  },
+  {
+    path: '/BlogAlbanien/:id',
+    name: 'BlogPostAlbanien',
+    component: BlogPostAlbanien,
+}
 ];
 
 const router = createRouter({

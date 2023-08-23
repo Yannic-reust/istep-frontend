@@ -2,8 +2,8 @@ import { createApp, provide, h } from 'vue'
 import { DefaultApolloClient } from '@vue/apollo-composable'
 import { ApolloClient, InMemoryCache } from '@apollo/client/core'
 import App from './App.vue'
+import Markdown from 'vue3-markdown-it';
 //@ts-ignore
-
 import router from './router.js'
 import './App.scss'
 //@ts-ignore
@@ -24,4 +24,4 @@ const app = createApp({
   render: () => h(App),
 })
 
-app.use(router).use(store).mount('#app');
+app.use(router).use(Markdown).use(store).mount('#app');
