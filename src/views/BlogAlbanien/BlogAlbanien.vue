@@ -5,7 +5,7 @@
       <p class="text-h5">{{ result.blog.data.attributes.Text }}</p>
       <div class="row margin-top-5">
         <div
-          class="col-xs-12 col-md-4"
+          class="col-xs-12 col-md-4 margin-top-2"
           v-for="(blogItem, index) in result.blogAlbaniens.data"
           :key="index"
         >
