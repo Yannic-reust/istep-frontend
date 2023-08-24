@@ -58,7 +58,7 @@ export default {
               Title
               Teaser
               Date
-              Text
+              
               Image {
                 data {
                   attributes {
