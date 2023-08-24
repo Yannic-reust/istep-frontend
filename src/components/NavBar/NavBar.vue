@@ -26,13 +26,13 @@ export default defineComponent({
 <template>
   <div id="navBar">
     <div class="navContainer flex space-between height-100">
-      <div class="width-30 margin-left-5 flex align-center">
+      <div class="width-80 margin-left-5 flex align-center">
         <div class="test flex">
           <router-link to="/" class="none secondary text-h2 bold">iSTEP</router-link>
           <p class="secondary margin-left-1">into my future</p>
         </div>
       </div>
-      <div class="width-90 flex justify-end height-100">
+      <div class="width-20 flex justify-end height-100">
         <div
           class="flex column justify-center margin-right-5 pointer"
           @click="showNav = !showNav"

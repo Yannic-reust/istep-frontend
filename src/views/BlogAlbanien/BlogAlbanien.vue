@@ -1,5 +1,5 @@
 <template>
-  <div id="blogAlbanien" v-if="result" class="margin-top-5">
+  <div id="blogAlbanien" v-if="result" class="margin-bottom-5">
     <div class="container">
       <h1 class="margin-top-5">{{ result.blog.data.attributes.Title }}</h1>
       <p class="text-h5">{{ result.blog.data.attributes.Text }}</p>
