@@ -1,6 +1,6 @@
 <template>
-  <div id="blogPreview" v-if="data">
-    <div class="radius-8 bg-secondary">
+  <div id="blogPreview" v-if="data" class="height-100">
+    <div class="radius-8 bg-secondary height-100">
      
         <img
         :src="`https://istep-backend.blackbox-mit.ch${data.attributes.Image.data.attributes.url}`"
@@ -14,7 +14,7 @@
           <p v-if="data.attributes.Date" >{{ data.attributes.Date.replace(/-/g, " ") }}</p>
         </div>
 
-        <p class="primary decoration-none" v-if="data.attributes.Teaser">{{ data.attributes.Teaser }}</p>
+        <p class="primary decoration-none margin-top-2" v-if="data.attributes.Teaser">{{ data.attributes.Teaser }}</p>
       </div>
 
     

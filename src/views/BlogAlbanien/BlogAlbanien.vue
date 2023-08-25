@@ -3,15 +3,15 @@
     <div class="container">
       <h1 class="margin-top-5">{{ result.blog.data.attributes.Title }}</h1>
       <p class="text-h5">{{ result.blog.data.attributes.Text }}</p>
-      <div class="row margin-top-5">
+      <div class="row margin-top-5 equal">
         <div
-          class="col-xs-12 col-md-4 margin-top-2"
+          class="col-xs-12 col-md-4 margin-top-2 "
           v-for="(blogItem, index) in result.blogAlbaniens.data"
           :key="index"
         >
      
           <a :href="'/BlogAlbanien/'+blogItem.id" class="primary decoration-none">
-            <BlogPreview :data="blogItem" />
+            <BlogPreview :data="blogItem" class="height-100"/>
           </a>
         </div>
       </div>
