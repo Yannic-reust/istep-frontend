@@ -45,7 +45,10 @@ export default defineComponent({
           <p>{{ ProjectDetailBox.Text }}</p>
         </div>
       </div>
-      <button class="button-primary margin-top-5">Blog</button>
+      <a href="/BlogAlbanien">
+        <button class="button-primary margin-top-5">Blog</button>
+      </a>
+    
     </div>
   </div>
 </template>
