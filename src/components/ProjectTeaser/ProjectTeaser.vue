@@ -26,7 +26,7 @@ export default defineComponent({
     </div>
     <!------------------------------ Details ------------------------>
 
-    <div class="container">
+    <div class="container flex-center">
       <div class="row">
         <div
           v-for="(ProjectDetailBox, index) in project.ProjectDetailBox"
@@ -45,6 +45,7 @@ export default defineComponent({
           <p>{{ ProjectDetailBox.Text }}</p>
         </div>
       </div>
+      <button class="button-primary margin-top-5">Blog</button>
     </div>
   </div>
 </template>

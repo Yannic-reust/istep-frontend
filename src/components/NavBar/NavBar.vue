@@ -6,12 +6,13 @@ export default defineComponent({
   props: ["navbar"],
   setup() {
     const navItems = [
-      { name: "Projekte", link: "projectTeaser" },
-      { name: "Vision", link: "vision" },
-      { name: "Unsere Werte", link: "values" },
-      { name: "Über uns", link: "team" },
-      { name: "Spenden", link: "donate" },
-      { name: "Kontaktiere Uns", link: "contactForm" },
+      { name: "Projekte", link: "#projectTeaser" },
+      { name: "Vision", link: "#vision" },
+      { name: "Unsere Werte", link: "#values" },
+      { name: "Über uns", link: "#team" },
+      { name: "Spenden", link: "#donate" },
+      { name: "Kontaktiere Uns", link: "#contactForm" },
+      { name: "Blogs", link: "/BlogAlbanien" },
     ];
 
     const showNav = ref(false);
@@ -60,7 +61,7 @@ export default defineComponent({
           @click="showNav = !showNav"
         >
           <a
-            :href="'/#' + navItem.link"
+            :href=" navItem.link"
             class="text-h1 secondary decoration-none"
           >
             {{ navbar[index].Name }}
