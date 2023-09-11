@@ -1,5 +1,6 @@
 <template>
   <div id="blogPostAlbanien" v-if="result" class="margin-top-5">
+    <h1>{{ result }}</h1>
     <div class="container margin-top-5">
       <div class="row">
         <div class="col-md-6 col-xs-12 margin-top-4">
