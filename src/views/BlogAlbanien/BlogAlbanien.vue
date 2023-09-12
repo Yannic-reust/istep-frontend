@@ -42,8 +42,8 @@ export default {
     const variables = { locale: store.state.currentLanguage.code };
 
     const blogAlbanien = gql`
-      query blogAlbanien($locale: I18NLocaleCode) {
-        blog(locale: $locale) {
+      query blogAlbanien{
+        blog{
           data {
             attributes {
               Title
@@ -51,7 +51,7 @@ export default {
             }
           }
         }
-        blogAlbaniens(locale: $locale) {
+        blogAlbaniens {
           data {
             id
             attributes {
