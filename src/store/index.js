@@ -7,6 +7,7 @@ const store = createStore({
     locale: [
       { code: "de", lang: "Deutsch" },
       { code: "en", lang: "Englisch" },
+      { code: "sq", lang: "Albanisch" },
     ],
     currentLanguage: { code: "de", lang: "Deutsch" },
   },
