@@ -9,12 +9,24 @@ export default defineComponent({
   data() {
     return {
       store: useStore(),
-      websites:[
+      websites: [
         {
-          link:"",
-          name:""
-        }
-      ]
+          link: "https://istep.ch/websitesElbasan2023/Alisa/tasks/index.html",
+          name: "Alisa",
+        },
+        {
+          link: "https://istep.ch/websitesElbasan2023/Emanuel/Emanuel/feedback.html",
+          name: "Emanuel",
+        },
+        {
+          link: "https://istep.ch/websitesElbasan2023/Mikaeli/mikael.HTML",
+          name: "Mikaeli",
+        },
+        {
+          link: "https://istep.ch/websitesElbasan2023/Mond/Mond/mond.html",
+          name: "Mond",
+        },
+      ],
     };
   },
   components: {},
@@ -26,10 +38,12 @@ export default defineComponent({
     <div class="container margin-top-5 margin-bottom-5">
       <h2>Title</h2>
       <p>Intorduction Text</p>
-      <a href="/websitesElbasan2023/Mond/Mond/Mond.html
-      ">Mond</a>
-      <ul>
-        <!-- <li v-for=""></li> -->
+
+      <ul class="margin-top-5">
+        <li v-for="(item, index) in websites" :key="index">
+          <a :href="item.link"> {{ item.name }}</a>
+    
+        </li>
       </ul>
     </div>
   </div>
