@@ -2,15 +2,23 @@
 
 #navBar {
   background-color: $primary;
-  height: 80px;
+  height: 110px;
   width: 100%;
-  .test{
+  .languageSwitch{
+    width: 100%;
+    background-color: white;
+    height: 30px;
+    z-index: 9999;
+  }
+  .baseline{
     align-items: baseline;
   }
   .none{
    text-decoration: none; 
   }
   .navContainer {
+   
+    height: 80px;
     .line {
       width: 42px;
       height: 4px;
@@ -22,7 +30,7 @@
     background-color: $primary;
     width: 100%;
     height: 100vh;
-    z-index: 9999;
+    z-index: 9989;
     position: absolute;
     top: 0;
     left: 0;

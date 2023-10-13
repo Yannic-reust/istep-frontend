@@ -1,18 +1,24 @@
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-
+import { useStore } from "vuex";
 export default defineComponent({
   name: "Navbar",
   props: ["navbar"],
+  data() {
+    return {
+      store: useStore(),
+    };
+  },
+  methods: {
+    changelang(e: string) {
+      this.store.dispatch("setLanguage", { lang: e });
+      window.location.reload();
+    },
+  },
   setup() {
     const navItems = [
-      { name: "Projekte", link: "#projectTeaser" },
-      { name: "Vision", link: "#vision" },
-      { name: "Unsere Werte", link: "#values" },
-      { name: "Über uns", link: "#team" },
-      { name: "Spenden", link: "#donate" },
-      { name: "Kontaktiere Uns", link: "#contactForm" },
-      { name: "Blogs", link: "/BlogAlbanien" },
+      { name: "Donate", link: "/Donate" },
+      { name: "Blog", link: "/BlogAlbanien" },
     ];
 
     const showNav = ref(false);
@@ -26,10 +32,25 @@ export default defineComponent({
 
 <template>
   <div id="navBar">
-    <div class="navContainer flex space-between height-100">
+    <div class="languageSwitch">
+      <div class="flex margin-left-5">
+        <div
+          v-for="(lang, index) in store.state.locale2"
+          :key="index"
+          class="flex"
+        >
+          <a @click="changelang(lang)" class="pointer">{{ lang.code }}</a>
+
+          <p v-if="index !== store.state.locale2.length - 1">|</p>
+        </div>
+      </div>
+    </div>
+    <div class="navContainer flex space-between ">
       <div class="width-80 margin-left-5 flex align-center">
-        <div class="test flex">
-          <router-link to="/" class="none secondary text-h2 bold">iSTEP</router-link>
+        <div class="baseline flex">
+          <router-link to="/" class="none secondary text-h2 bold"
+            >iSTEP</router-link
+          >
           <p class="secondary margin-left-1">into my future</p>
         </div>
       </div>
@@ -60,10 +81,7 @@ export default defineComponent({
           class="text-center text-h2 secondary margin-5"
           @click="showNav = !showNav"
         >
-          <a
-            :href=" navItem.link"
-            class="text-h1 secondary decoration-none"
-          >
+          <a :href="navItem.link" class="text-h1 secondary decoration-none">
             {{ navbar[index].Name }}
           </a>
         </p>

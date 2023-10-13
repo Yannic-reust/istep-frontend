@@ -4,7 +4,7 @@ import createPersistedState from "vuex-persistedstate";
 const store = createStore({
   plugins: [createPersistedState()],
   state: {
-    locale: [
+    locale2: [
       { code: "de", lang: "Deutsch" },
       { code: "en", lang: "Englisch" },
       { code: "sq", lang: "Albanisch" },
