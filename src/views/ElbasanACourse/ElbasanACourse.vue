@@ -26,7 +26,7 @@ export default defineComponent({
     <div class="container margin-top-5 margin-bottom-5">
       <h2>Title</h2>
       <p>Intorduction Text</p>
-      <a href="/websitesElbasan2023/Mond/Mond/index.html
+      <a href="/websitesElbasan2023/Mond/Mond/Mond.html
       ">Mond</a>
       <ul>
         <!-- <li v-for=""></li> -->
