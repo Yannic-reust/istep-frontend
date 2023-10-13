@@ -5,7 +5,27 @@ import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
 import { useStore } from "vuex";
 export default defineComponent({
-  setup() {},
+  setup() {
+    const store = useStore();
+
+    const variables = { locale: store.state.currentLanguage.code };
+
+    const donate = gql`
+      query elbasanACourse($locale: I18NLocaleCode) {
+        elbasanACourse(locale: $locale) {
+          data {
+            attributes {
+              Title
+              Text
+            }
+          }
+        }
+      }
+    `;
+    const { result, loading, error } = useQuery(donate, variables);
+
+    return { result };
+  },
   data() {
     return {
       store: useStore(),
@@ -36,13 +56,12 @@ export default defineComponent({
 <template>
   <div id="elbasanCourse">
     <div class="container margin-top-5 margin-bottom-5">
-      <h2>Title</h2>
-      <p>Intorduction Text</p>
+      <h2>{{ result.elbasanACourse.data.attributes.Title }}</h2>
+      <p>{{ result.elbasanACourse.data.attributes.Text }}</p>
 
       <ul class="margin-top-5">
         <li v-for="(item, index) in websites" :key="index">
           <a :href="item.link"> {{ item.name }}</a>
-    
         </li>
       </ul>
     </div>
