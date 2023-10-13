@@ -5,20 +5,33 @@ import { useQuery } from "@vue/apollo-composable";
 import gql from "graphql-tag";
 import { useStore } from "vuex";
 export default defineComponent({
-  setup() {
-   
+  setup() {},
+  data() {
+    return {
+      store: useStore(),
+      websites:[
+        {
+          link:"",
+          name:""
+        }
+      ]
+    };
   },
-
-  components: {
-
-  },
+  components: {},
 });
 </script>
 
 <template>
-  <div id="home"
->
-   
+  <div id="elbasanCourse">
+    <div class="container margin-top-5 margin-bottom-5">
+      <h2>Title</h2>
+      <p>Intorduction Text</p>
+      <a href="/websitesElbasan2023/Mond/Mond/index.html
+      ">Mond</a>
+      <ul>
+        <!-- <li v-for=""></li> -->
+      </ul>
+    </div>
   </div>
 </template>
 

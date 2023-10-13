@@ -1,0 +1,30 @@
+body{
+    color: white;
+}
+
+
+
+body {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: url(imagesA.jpg);
+    background-position: top left;
+    animation: mymove 5s infinite;
+text-align:center ;
+width: 100%;
+  }
+  
+  @keyframes mymove {
+    50% {background-position: center;}
+  }
+  
+  h1 body{
+    text-align: center;  
+  }
+
+.image{
+    margin: left 300pxpx ;
+    width: 300px;
+    
+}

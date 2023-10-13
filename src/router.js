@@ -33,7 +33,7 @@ const routes = [
     component: BlogPostAlbanien,
 },
   {
-    path: '/ElbasanACourse',
+    path: '/elbasanACourse',
     name: 'ElbasanACourse',
     component: ElbasanACourse,
 }

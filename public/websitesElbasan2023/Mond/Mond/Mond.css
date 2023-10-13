@@ -1,0 +1,23 @@
+
+body {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: url('c0.png');
+  background-position: top left;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {background-position: center;}
+}
+
+h1{
+  text-align: center;
+}
+
+.table,
+      th,
+      td {
+        border: 1px solid rgb(10, 24, 27);
+      }
