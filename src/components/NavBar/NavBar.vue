@@ -17,6 +17,7 @@ export default defineComponent({
   },
   setup() {
     const navItems = [
+      { name: "Home", link: "/" },
       { name: "Donate", link: "/Donate" },
       { name: "Blog", link: "/BlogAlbanien" },
       { name: "Elbasan Course Websites", link: "/elbasanACourse" },
