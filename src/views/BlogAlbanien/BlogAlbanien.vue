@@ -13,14 +13,14 @@
           >
             <BlogPreview
               :data="blogItem"
-              class="height-100"
+              class="height-100 pointer"
               @click="openDetail(index)"
             />
           </div>
         </div>
       </div>
 
-      <div class="" v-if="detail">
+      <div class="" v-if="detail" >
         <img
           src="../../assets/general/arrow-back.svg"
           alt="back icon"
