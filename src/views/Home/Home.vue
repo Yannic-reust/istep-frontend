@@ -18,22 +18,6 @@ export default defineComponent({
 
     const home = gql`
       query home($locale: I18NLocaleCode) {
-       
-        teamMembers(locale: $locale) {
-          data {
-            attributes {
-              Name
-              Text
-              Image {
-                data {
-                  attributes {
-                    url
-                  }
-                }
-              }
-            }
-          }
-        }
         home(locale: $locale) {
           data {
             attributes {
@@ -56,16 +40,27 @@ export default defineComponent({
               AboutUs {
                 Title
                 Text
+                teamMember {
+                  Name
+                  Text
+                  Image {
+                    data {
+                      attributes {
+                        url
+                      }
+                    }
+                  }
+                }
               }
               Donate {
                 Title
                 Text
                 ButtonText
-              
               }
               Project {
                 Title
                 Text
+
                 ProjectDetailBox {
                   Title
                   Text
@@ -78,29 +73,27 @@ export default defineComponent({
                   }
                 }
               }
-             
             }
           }
         }
         contactForm(locale: $locale) {
           data {
             attributes {
-                Title
-                FirstInput
-                SecondInput
-                ThirdInput
-                FourthInput
-                Message
-                ButtonText
-                SuccessText
-                FailedText
-                
-                contactFormWhyItem {
-                  Name
-                }
+              Title
+              FirstInput
+              SecondInput
+              ThirdInput
+              FourthInput
+              Message
+              ButtonText
+              SuccessText
+              FailedText
+              contactFormWhyItem {
+                Name
               }
             }
           }
+        }
       }
     `;
     const { result, loading, error } = useQuery(home, variables);
@@ -139,17 +132,16 @@ export default defineComponent({
       <values :values="result.home.data.attributes.Values" />
     </div>
 
-       <teamComp
-        :team="result.teamMembers.data"
-        :aboutUs="result.home.data.attributes.AboutUs"
-      /> 
+    <teamComp
+      :team="result.home.data.attributes.AboutUs.teamMember"
+      :aboutUs="result.home.data.attributes.AboutUs"
+    />
 
     <div class="margin-top-5 padding-bottom-5">
       <donate :donate="result.home.data.attributes.Donate" />
     </div>
-  
-      <contactForm :contactForm="result.contactForm.data.attributes" />
 
+    <contactForm :contactForm="result.contactForm.data.attributes" />
   </div>
 </template>
 
