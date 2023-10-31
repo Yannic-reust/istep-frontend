@@ -3,6 +3,7 @@
     <div class="dropdown">
       <div class="flex align-center space-between" @click="open = !open">
         <span class="selected padding-2">
+        
           {{ store.state.currentLanguage.lang }}</span
         >
         <div class="caret margin-right-2"></div>

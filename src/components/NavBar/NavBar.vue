@@ -35,19 +35,26 @@ export default defineComponent({
 <template>
   <div id="navBar">
     <div class="languageSwitch">
-      <div class="flex margin-left-5">
+      <div class="flex height-100 margin-left-5">
         <div
           v-for="(lang, index) in store.state.locale2"
           :key="index"
-          class="flex"
+          class="flex-center"
         >
-          <a @click="changelang(lang)" class="pointer">{{ lang.code }}</a>
+          <!-- <a @click="changelang(lang)" class="pointer">{{ lang.code }}</a> -->
+          <img
+          @click="changelang(lang)"
+            :src="`/languageSwitch/${lang.code}.png`"
+            :alt="lang.code + ' flag'"
+            class="margin-left-1 pointer"
+            style="height: 20px;"
+          />
 
           <p v-if="index !== store.state.locale2.length - 1">|</p>
         </div>
       </div>
     </div>
-    <div class="navContainer flex space-between ">
+    <div class="navContainer flex space-between">
       <div class="width-80 margin-left-5 flex align-center">
         <div class="baseline flex">
           <router-link to="/" class="none secondary text-h2 bold"
