@@ -19,20 +19,18 @@
       </div>
     </div>
     <div class="margin-bottom-5">
-      <div
-        class="row margin-top-5"
-        v-for="(item, index) in data.SectionBlog"
-        :key="index"
-      >
-        <div class="col-xs-12 col-md-6" v-if="item.Text">
-          <Markdown :source="item.Text" />
-        </div>
-        <div class="col-xs-12 col-md-6" v-if="item.Image.data">
-          <img
-            :src="`https://istep-backend.blackbox-mit.ch${item.Image.data.attributes.url}`"
-            :alt="item.Text"
-            class="xs-width-80 width-100 xs-margin-left-10 radius-8"
-          />
+      <div class="row">
+        <div v-for="(item, index) in data.SectionBlog" :key="index">
+          <div class="col-xs-12 col-md-6 margin-top-5" v-if="item.Text">
+            <p>{{ item.Text }}</p>
+          </div>
+          <div class="col-xs-12 col-md-6 margin-top-5" v-if="item.Image.data">
+            <img
+              :src="`https://istep-backend.blackbox-mit.ch${item.Image.data.attributes.url}`"
+              :alt="item.Text"
+              class="xs-width-80 width-100 xs-margin-left-10 radius-8"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -42,9 +40,7 @@
 <script lang="ts">
 export default {
   name: "BlogContent",
-  components: {
-
-  },
+  components: {},
   props: ["data"],
   data() {
     return {};

@@ -28,7 +28,7 @@
           @click="goback()"
           style="width: 20px;"
         />
-        <BlogContent :data="result.blog.data.attributes.BlogBeitrag[0]" />
+        <BlogContent :data="result.blog.data.attributes.BlogBeitrag[tempIndex]" />
       </div>
     </div>
   </div>
