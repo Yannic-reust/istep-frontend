@@ -5,7 +5,7 @@
         src="../../assets/general/arrow-back.svg"
         alt="back icon"
         class="margin-top-5 pointer"
-        @click="this.$router.push('/BlogAlbanien')"
+        @click="back()"
         style="width: 20px"
       />
       <div v-if="blog.Title">
@@ -27,6 +27,11 @@ export default {
 
   data() {
     return {};
+  },
+  methods:{
+    back(){
+        this.$router.push('/BlogAlbanien')
+    }
   },
   mounted(){
     window.scrollTo(0,0)
