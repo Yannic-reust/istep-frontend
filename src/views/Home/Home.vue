@@ -158,7 +158,7 @@ export default defineComponent({
         :TeaserText="result.blog.data.attributes.Title_Teaser_Home"
         :blog="
           result.blog.data.attributes.BlogBeitrag[
-            result.blog.data.attributes.BlogBeitrag.length - 1
+            0
           ]
         "
       />
