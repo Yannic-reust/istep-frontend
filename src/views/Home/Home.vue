@@ -94,6 +94,37 @@ export default defineComponent({
             }
           }
         }
+        blog(locale: $locale) {
+          data {
+            attributes {
+              Title
+              Text
+              Title_Teaser_Home
+              BlogBeitrag {
+                Title
+                Teaser
+                Date
+                Image {
+                  data {
+                    attributes {
+                      url
+                    }
+                  }
+                }
+                SectionBlog {
+                  Text
+                  Image {
+                    data {
+                      attributes {
+                        url
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     `;
     const { result, loading, error } = useQuery(home, variables);
@@ -122,7 +153,15 @@ export default defineComponent({
       />
     </div>
     <div class="padding-bottom-5">
-      <projectTeaser :project="result.home.data.attributes.Project" />
+      <projectTeaser
+        :project="result.home.data.attributes.Project"
+        :TeaserText="result.blog.data.attributes.Title_Teaser_Home"
+        :blog="
+          result.blog.data.attributes.BlogBeitrag[
+            result.blog.data.attributes.BlogBeitrag.length - 1
+          ]
+        "
+      />
     </div>
 
     <div class="padding-top-5 padding-bottom-5">

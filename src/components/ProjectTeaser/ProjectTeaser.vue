@@ -3,7 +3,7 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ProjectTeaser",
-  props: ["project"],
+  props: ["project", "blog","TeaserText"],
   data() {
     return {
       // detailsOpen: false,
@@ -25,7 +25,6 @@ export default defineComponent({
       </div>
     </div>
     <!------------------------------ Details ------------------------>
-
     <div class="container flex-center">
       <div class="row">
         <div
@@ -45,10 +44,28 @@ export default defineComponent({
           <p>{{ ProjectDetailBox.Text }}</p>
         </div>
       </div>
+      <div class="margin-top-5  margin-bottom-5">
+        <h2 class="text-center margin-top-5">{{TeaserText}}</h2>
+        <div class="row equal">
+          <div class="col-xs-12 col-md-6">
+            <div class="height-100 flex justify-center column margin-top-5">
+              <h3 class="text-h3 margin-bottom-2">{{ blog.Title }}</h3>
+              <p>{{ blog.Teaser }}</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img
+              :src="`https://istep-backend.blackbox-mit.ch${blog.Image.data.attributes.url}`"
+              alt=""
+              class="width-100 radius-8 margin-top-5"
+            />
+          </div>
+        </div>
+      </div>
+
       <a href="/BlogAlbanien">
         <button class="button-primary margin-top-5">Blog</button>
       </a>
-    
     </div>
   </div>
 </template>

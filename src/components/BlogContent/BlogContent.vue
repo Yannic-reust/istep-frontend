@@ -6,7 +6,7 @@
           <h2>{{ data.Title }}</h2>
           <p>{{ data.Date }}</p>
         </div>
-        <p class="text-h5 margin-top-1">
+        <p class=" margin-top-1">
           {{ data.Teaser }}
         </p>
       </div>

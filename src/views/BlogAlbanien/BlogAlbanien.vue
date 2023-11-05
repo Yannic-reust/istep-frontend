@@ -13,6 +13,7 @@
           >
             <BlogPreview
               :data="blogItem"
+              :readMore="result.blog.data.attributes.ReadMore"
               class="height-100 pointer"
               @click="openDetail(index)"
             />
@@ -20,15 +21,17 @@
         </div>
       </div>
 
-      <div class="" v-if="detail" >
+      <div class="" v-if="detail">
         <img
           src="../../assets/general/arrow-back.svg"
           alt="back icon"
           class="margin-top-5 pointer"
           @click="goback()"
-          style="width: 20px;"
+          style="width: 20px"
         />
-        <BlogContent :data="result.blog.data.attributes.BlogBeitrag[tempIndex]" />
+        <BlogContent
+          :data="result.blog.data.attributes.BlogBeitrag[tempIndex]"
+        />
       </div>
     </div>
   </div>
@@ -75,6 +78,7 @@ export default {
             attributes {
               Title
               Text
+              ReadMore
               BlogBeitrag {
                 Title
                 Teaser
