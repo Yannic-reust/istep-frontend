@@ -36,7 +36,7 @@ export default defineComponent({
             {{ ProjectDetailBox.Title }}
           </h3>
           <img
-            :src="`https://istep-backend.blackbox-mit.ch${ProjectDetailBox.Image.data.attributes.url}`"
+            :src="`https://istep-backend.bbmit-service.tech${ProjectDetailBox.Image.data.attributes.url}`"
             :alt="ProjectDetailBox.Title"
             class="Image radius-16 margin-bottom-5"
           />
@@ -55,7 +55,7 @@ export default defineComponent({
           </div>
           <div class="col-xs-12 col-md-6">
             <img
-              :src="`https://istep-backend.blackbox-mit.ch${blog.Image.data.attributes.url}`"
+              :src="`https://istep-backend.bbmit-service.tech${blog.Image.data.attributes.url}`"
               alt=""
               class="width-100 radius-8 margin-top-5"
             />

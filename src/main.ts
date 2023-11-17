@@ -13,7 +13,7 @@ const cache = new InMemoryCache()
 
 const apolloClient = new ApolloClient({
   cache,
-  uri: 'https://istep-backend.blackbox-mit.ch/graphql',
+  uri: 'https://istep-backend.bbmit-service.tech/graphql',
 })
 
 const app = createApp({

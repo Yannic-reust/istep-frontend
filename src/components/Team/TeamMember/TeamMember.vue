@@ -15,7 +15,7 @@ export default defineComponent({
       <div
         class="card__side card__side--front"
         :style="{
-          backgroundImage: `url(https://istep-backend.blackbox-mit.ch${image})`,
+          backgroundImage: `url(https://istep-backend.bbmit-service.tech${image})`,
         }"
       ></div>
 

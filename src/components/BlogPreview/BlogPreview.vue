@@ -2,7 +2,7 @@
   <div id="blogPreview" v-if="data" class="height-100">
     <div class="radius-8 bg-secondary height-100">
       <img
-        :src="`https://istep-backend.blackbox-mit.ch${data.Image.data.attributes.url}`"
+      :src="`https://istep-backend.bbmit-service.tech${data.Image.data.attributes.url}`"
         :alt="data.Title"
         class="width-100 radius-8 margin-bottom-2"
         v-if="data.Image"
