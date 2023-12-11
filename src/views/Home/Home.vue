@@ -17,7 +17,8 @@ export default defineComponent({
     const variables = { locale: store.state.currentLanguage.code };
 
     const home = gql`
-      query home($locale: I18NLocaleCode) {
+     # Write your query or mutation here
+query home($locale: I18NLocaleCode) {
         home(locale: $locale) {
           data {
             attributes {
@@ -40,7 +41,11 @@ export default defineComponent({
               AboutUs {
                 Title
                 Text
-                teamMember {
+             
+              }
+              Teams{
+                Title
+                   teamMember {
                   Name
                   Text
                   Image {
@@ -126,6 +131,7 @@ export default defineComponent({
           }
         }
       }
+  
     `;
     const { result, loading, error } = useQuery(home, variables);
 
@@ -172,7 +178,7 @@ export default defineComponent({
     </div>
 
     <teamComp
-      :team="result.home.data.attributes.AboutUs.teamMember"
+      :teams="result.home.data.attributes.Teams"
       :aboutUs="result.home.data.attributes.AboutUs"
     />
 
