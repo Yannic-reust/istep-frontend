@@ -62,6 +62,11 @@ query home($locale: I18NLocaleCode) {
                 Text
                 ButtonText
               }
+              TeaserOffer{
+                Title
+                Text
+                ButtonText
+              }
               Project {
                 Title
                 Text
@@ -179,10 +184,10 @@ query home($locale: I18NLocaleCode) {
 
     
       <div class="flex-center column padding-top-5 padding-bottom-10">
-        <h2 class="text-center">Unser Angebot</h2>
-        <p class="margin-top-2">Wir bieten diverse Kurse im Bereich der IT und Multimedia an.</p>
+        <h2 class="text-center">{{result.home.data.attributes.TeaserOffer.Title}}</h2>
+        <p class="margin-top-2">{{result.home.data.attributes.TeaserOffer.Text}}</p>
        <a href="/offer">
-        <button class="button-primary margin-top-4">Zu unseren Angeboten</button>
+        <button class="button-primary margin-top-4">{{result.home.data.attributes.TeaserOffer.ButtonText}}</button>
        </a>
 
        
