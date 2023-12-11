@@ -10,26 +10,51 @@
           v-for="(item, index) in result.angebot.data.attributes.offerItem"
           :key="index"
         >
-          <div class="bg-secondary padding-2 radius-8">
-            <p class="text-center bold text-h5">{{ item.Title }}</p>
+          <div class="bg-secondary padding-4 radius-8">
+            <p class="text-center bold text-h5 padding-bottom-2">
+              {{ item.Title }}
+            </p>
             <div class="margin-top-1">
-              <p class="bold"> {{ result.angebot.data.attributes.StaticText.When }}</p>
-              <p>{{item.When}}</p>
+              <p class="bold">
+                {{ result.angebot.data.attributes.StaticText.When }}
+              </p>
+              <p>{{ item.When }}</p>
             </div>
             <div class="margin-top-1">
-              <p class="bold"> {{ result.angebot.data.attributes.StaticText.Where }}</p>
-              <p>{{item.Where}}</p>
+              <p class="bold">
+                {{ result.angebot.data.attributes.StaticText.Where }}
+              </p>
+              <p>{{ item.Where }}</p>
             </div>
             <div class="margin-top-1">
-              <p class="bold">{{ result.angebot.data.attributes.StaticText.TargetAudience }}</p>
-              <p>{{item.TargetAudience}}</p>
+              <p class="bold">
+                {{ result.angebot.data.attributes.StaticText.TargetAudience }}
+              </p>
+              <p>{{ item.TargetAudience }}</p>
             </div>
             <div class="margin-top-1">
-              <p class="bold">{{item.QuestionsOrInterested}}</p>
+              <p class="bold">{{ item.QuestionsOrInterested }}</p>
               <a href="mailto:info@istep.ch">info@istep.ch</a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="bg-secondary padding-4 radius-8">
+        <h2 class="text-h3 margin-bottom-2">
+          {{ result.angebot.data.attributes.requirements.Title }}
+        </h2>
+        <ul class="margin-left-2 marign-top-4 ">
+          <li
+            class="text-standard"
+            v-for="(item, index) in result.angebot.data.attributes.requirements
+              .requirementsItem"
+            :key="index"
+          >
+            {{ item.Text }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -69,6 +94,12 @@ export default {
                 Where
                 TargetAudience
                 QuestionsOrInterested
+              }
+              requirements {
+                Title
+                requirementsItem {
+                  Text
+                }
               }
             }
           }
