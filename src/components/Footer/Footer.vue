@@ -24,10 +24,11 @@
               </a>
             </li>
           </ul>
-          <selectLocale />
+          <p class="copyright secondary">iSTEP © {{ year }}</p>
+          <!-- <selectLocale /> -->
         </div>
       </div>
-      <p class="copyright secondary">iSTEP © {{ year }}</p>
+    
     </div>
   </div>
 </template>

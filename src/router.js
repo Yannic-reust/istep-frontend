@@ -5,6 +5,7 @@ import BlogAlbanien from "./views/BlogAlbanien/BlogAlbanien.vue";
 import Blog from "./views/BlogDetail/BlogDetail.vue";
 import Donate from "./views/Donate/Donate.vue";
 import ElbasanACourse from "./views/ElbasanACourse/ElbasanACourse.vue";
+import Offer from "./views/Angebot/Angebot.vue";
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: '/BlogAlbanien/detailBlog',
     name: 'Blog',
     component: Blog,
+},
+  {
+    path: '/offer',
+    name: 'Offer',
+    component: Offer,
 }
 ];
 
