@@ -34,11 +34,11 @@
             </div>
             <div class="margin-top-1">
               <p class="bold">{{ item.QuestionsOrInterested }}</p>
-              <div class="flex">
+            
                 <p>{{result.angebot.data.attributes.contact }}:</p>
             
-                <a href="mailto:info@istep.ch" class="margin-left-1">info@istep.ch</a>
-              </div>
+                <a href="mailto:info@istep.ch" >info@istep.ch</a>
+              
             
             </div>
           </div>
