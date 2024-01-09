@@ -34,7 +34,12 @@
             </div>
             <div class="margin-top-1">
               <p class="bold">{{ item.QuestionsOrInterested }}</p>
-              <a href="mailto:info@istep.ch">info@istep.ch</a>
+              <div class="flex">
+                <p>{{result.angebot.data.attributes.contact }}:</p>
+            
+                <a href="mailto:info@istep.ch" class="margin-left-1">info@istep.ch</a>
+              </div>
+            
             </div>
           </div>
         </div>
@@ -78,7 +83,7 @@ export default {
     const variables = { locale: store.state.currentLanguage.code };
 
     const angebot = gql`
-      query angebot($locale: I18NLocaleCode) {
+       query angebot($locale: I18NLocaleCode) {
         angebot(locale: $locale) {
           data {
             attributes {
@@ -100,7 +105,9 @@ export default {
                 requirementsItem {
                   Text
                 }
+                
               }
+              contact
             }
           }
         }

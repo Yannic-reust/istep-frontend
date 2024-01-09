@@ -40,7 +40,7 @@ const routes = [
     component: Blog,
 },
   {
-    path: '/offer',
+    path: '/Offer',
     name: 'Offer',
     component: Offer,
 }

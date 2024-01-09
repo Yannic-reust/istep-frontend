@@ -19,8 +19,10 @@ export default defineComponent({
     const navItems = [
       { name: "Home", link: "/" },
       { name: "Donate", link: "/Donate" },
+      { name: "Angebot", link: "/Offer" },
       { name: "Blog", link: "/BlogAlbanien" },
       { name: "Elbasan Course Websites", link: "/elbasanACourse" },
+      
     ];
 
     const showNav = ref(false);
