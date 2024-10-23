@@ -62,7 +62,11 @@ export default defineComponent({
           <p class="margin-bottom-2 text-h4">
             {{ result.donate.data.attributes.QrRechnung }}
           </p>
-          <img src="/QR-Rechnung.png" alt="qr rechnung" class="width-100 margin-bottom-2" />
+          <img
+            src="/QR-Rechnung.png"
+            alt="qr rechnung"
+            class="width-100 margin-bottom-2"
+          />
           <a href="/QR_Rechnung.pdf" download>Download</a>
         </div>
 
@@ -81,7 +85,6 @@ export default defineComponent({
         <div class="width-100 flex-center">
           <img src="/twint.png" alt="twint qr code" class="img" />
         </div>
-      
       </div>
 
       <p class="text-h4 margin-bottom-2">
@@ -97,7 +100,13 @@ export default defineComponent({
 
         <a href="https://fairgive.org/" target="_blank">FairGive</a>
       </p>
-      <div class="rnw-widget-container width-100"></div>
+      <div>
+        <iframe
+          src="https://donate.raisenow.io/zbvxd"
+          height="1600px"
+          width="100%"
+        ></iframe>
+      </div>
     </div>
   </div>
 </template>
