@@ -10,12 +10,11 @@ export default defineComponent({
 
 <template>
   <div id="teamMemeber">
- 
     <div class="card">
       <div
         class="card__side card__side--front"
         :style="{
-          backgroundImage: `url(https://istep-backend.bbmit-service.tech${image})`,
+          backgroundImage: `url(https://istep-backend.bbmit-service.ch${image})`,
         }"
       ></div>
 

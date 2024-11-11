@@ -6,13 +6,13 @@
           <h2>{{ data.Title }}</h2>
           <p>{{ data.Date }}</p>
         </div>
-        <p class=" margin-top-1">
+        <p class="margin-top-1">
           {{ data.Teaser }}
         </p>
       </div>
       <div class="col-md-6 col-xs-12 margin-top-4">
         <img
-          :src="`https://istep-backend.bbmit-service.tech${data.Image.data.attributes.url}`"
+          :src="`https://istep-backend.bbmit-service.ch${data.Image.data.attributes.url}`"
           alt=""
           class="xs-width-80 width-100 xs-margin-left-10 radius-8"
         />
@@ -26,7 +26,7 @@
           </div>
           <div class="col-xs-12 col-md-6 margin-top-5" v-if="item.Image.data">
             <img
-              :src="`https://istep-backend.bbmit-service.tech${item.Image.data.attributes.url}`"
+              :src="`https://istep-backend.bbmit-service.ch${item.Image.data.attributes.url}`"
               :alt="item.Text"
               class="xs-width-80 width-100 xs-margin-left-10 radius-8"
             />

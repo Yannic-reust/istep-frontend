@@ -3,7 +3,7 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ProjectTeaser",
-  props: ["project", "blog","TeaserText"],
+  props: ["project", "blog", "TeaserText"],
   data() {
     return {
       // detailsOpen: false,
@@ -36,7 +36,7 @@ export default defineComponent({
             {{ ProjectDetailBox.Title }}
           </h3>
           <img
-            :src="`https://istep-backend.bbmit-service.tech${ProjectDetailBox.Image.data.attributes.url}`"
+            :src="`https://istep-backend.bbmit-service.ch${ProjectDetailBox.Image.data.attributes.url}`"
             :alt="ProjectDetailBox.Title"
             class="Image radius-16 margin-bottom-5"
           />
@@ -44,8 +44,8 @@ export default defineComponent({
           <p>{{ ProjectDetailBox.Text }}</p>
         </div>
       </div>
-      <div class="margin-top-5  margin-bottom-5">
-        <h2 class="text-center margin-top-5">{{TeaserText}}</h2>
+      <div class="margin-top-5 margin-bottom-5">
+        <h2 class="text-center margin-top-5">{{ TeaserText }}</h2>
         <div class="row equal">
           <div class="col-xs-12 col-md-6">
             <div class="height-100 flex justify-center column margin-top-5">
@@ -55,7 +55,7 @@ export default defineComponent({
           </div>
           <div class="col-xs-12 col-md-6">
             <img
-              :src="`https://istep-backend.bbmit-service.tech${blog.Image.data.attributes.url}`"
+              :src="`https://istep-backend.bbmit-service.ch${blog.Image.data.attributes.url}`"
               alt=""
               class="width-100 radius-8 margin-top-5"
             />
